@@ -127,16 +127,20 @@ public class TabClass {
         });
 
         text1.setOnAction(e -> {
-            text2.setText(text1.getText());
-            tabHistory.addUrl(text1.getText());
-            browse();
-            check();
+            if(text1.getText().length() != 0) {
+                text2.setText(text1.getText());
+                tabHistory.addUrl(text1.getText());
+                browse();
+                check();
+            }
         });
         text2.setOnAction(e -> {
-            text1.setText(text2.getText());
-            tabHistory.addUrl(text1.getText());
-            browse();
-            check();
+            if(text2.getText().length() != 0) {
+                text1.setText(text2.getText());
+                tabHistory.addUrl(text1.getText());
+                browse();
+                check();
+            }
         });
         homeButton.setOnMouseClicked(e->
         {
@@ -172,6 +176,7 @@ public class TabClass {
 
         WebEngine engine = web.getEngine();
         checkUrl();
+        setTabTiltle();
         engine.load(text1.getText());
         NewTab.history.add(text1.getText());
         layout.setCenter(web);
@@ -203,6 +208,11 @@ public class TabClass {
            if(!text1.getText().startsWith("https://"))
            text1.setText("https://www." + text1.getText());
        }
+   }
+
+   public void setTabTiltle(){
+       String text = text1.getText();
+       tab.setText(text.substring(text.indexOf(".")+1 , text.lastIndexOf(".")));
    }
 
 }
