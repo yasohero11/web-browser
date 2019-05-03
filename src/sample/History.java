@@ -10,6 +10,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -33,6 +34,7 @@ public class History {
         borderPane = new BorderPane();
         window = new Stage();
         window.setTitle("History");
+        window.initModality(Modality.APPLICATION_MODAL);
         pane2 = new HistoryPane(700, 600, 50);
         frame = new Scene(pane2, 700, 600);
         window.setScene(frame);

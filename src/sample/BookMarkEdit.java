@@ -5,16 +5,16 @@ import javafx.scene.control.ChoiceBox;
 
 public class BookMarkEdit extends EditMessage {
 
-    Button clear;
-    Button delete;
-    Button save;
+    private Button clear;
+    private Button delete;
+    private Button save;
     BookMarkEdit(ChoiceBox box){
         super(box);
 
       clear = getClear();
       delete = getDelete();
       save =getSave();
-
+         setTittle("Bookmark update window");
         save.setOnAction(e-> {
             NewTab.bookMarks.edit(name.getText());
             close();

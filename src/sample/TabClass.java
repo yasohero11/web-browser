@@ -17,7 +17,7 @@ public class TabClass {
     private String URL;
     private JFXTextField text1;
     private TextField text2;
-    public  ToolBar toolBar;
+    private ToolBar toolBar;
     public  BorderPane layout;
     private Pane centerLayout;
     private Text title;
@@ -36,7 +36,7 @@ public class TabClass {
 
 
 
-    TabClass(){
+   private TabClass(){
         currentPage = 0;
         web = new WebView();
         text1 = new JFXTextField();
@@ -75,7 +75,7 @@ public class TabClass {
         //easyButtonsLayout.setPrefSize(600 , 100);
         edit = new JFXButton("Edit Easy Button");
         edit.setLayoutX(570);
-        edit.setLayoutY(380);
+        edit.setLayoutY(370);
         edit.setPrefSize(200 , 40);
         centerLayout.getChildren().addAll(title , text2 , logo , edit);
         text1.setAlignment(Pos.CENTER);

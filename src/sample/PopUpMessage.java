@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class PopUpMessage {
@@ -23,6 +24,7 @@ public class PopUpMessage {
         bottomLayout = new HBox();
         frame = new Stage();
         frame.setTitle("Pop Up Message");
+        frame.initModality(Modality.APPLICATION_MODAL);
         save = new Button("Save");
         close = new Button("Close");
         bottomLayout.getChildren().addAll(save, close);
