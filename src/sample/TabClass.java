@@ -28,7 +28,6 @@ public class TabClass {
     private WebView web;
     private JFXButton historyButton;
     private JFXButton homeButton;
-    private int currentPage ;
     public TabHistory tabHistory;
     private  FlowPane easyButtonsLayout =  new FlowPane();
     private Tab tab;
@@ -37,7 +36,6 @@ public class TabClass {
 
 
    private TabClass(){
-        currentPage = 0;
         web = new WebView();
         text1 = new JFXTextField();
         text2 = new TextField();
@@ -201,7 +199,7 @@ public class TabClass {
     }
 
    private void checkUrl() {
-       if (!text1.getText().startsWith("https://www.") || !!text1.getText().startsWith("http://www.")) {
+       if (!text1.getText().startsWith("https://www.") || !text1.getText().startsWith("http://www.")) {
            if(!text1.getText().startsWith("https://"))
            text1.setText("https://www." + text1.getText());
        }
