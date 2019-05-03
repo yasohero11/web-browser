@@ -27,11 +27,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Scene scene = new Scene(root, 1350, 600);
 
-
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-        NewTab.pane.prefWidthProperty().bind(primaryStage.widthProperty().divide(2));
-
-
         primaryStage.setScene(scene);
         primaryStage.setTitle("Candy Butcher");
 
