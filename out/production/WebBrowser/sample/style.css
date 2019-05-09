@@ -46,7 +46,7 @@
 -jfx-focus-color : #F2F07D;
 */
 -fx-prompt-text-fill: #BDC3C7;
- //-fx-effect: dropshadow( two-pass-box , blue , .5, 10 , 1 , 1);
+ /*-fx-effect: dropshadow( two-pass-box , blue , .5, 10 , 1 , 1);*/
 -fx-font-size : 15;
 -fx-text-fill : #B3B6B7;
 }
@@ -58,8 +58,9 @@
 #newTab{
 -fx-background-color : #B3B6B7;
 -fx-pref-width : 40;
--fx-font-size: 200;
+-fx-pref-height: 40;
 }
+
 
 .jfx-tab-pane{
     -fx-background-color: #5DADE2;

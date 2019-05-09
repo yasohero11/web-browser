@@ -70,7 +70,6 @@ public class TabClass {
         title.setY(170);
         text2.setLayoutX(280);
         text2.setLayoutY(220);
-        //easyButtonsLayout.setPrefSize(600 , 100);
         edit = new JFXButton("Edit Easy Button");
         edit.setLayoutX(570);
         edit.setLayoutY(370);
