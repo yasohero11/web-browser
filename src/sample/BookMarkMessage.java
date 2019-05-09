@@ -2,8 +2,9 @@ package sample;
 
 
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 
-public class BookMarkMessage extends AddMessage {
+public class BookMarkMessage extends AddMessage{
     private Button save;
     private Button close;
     BookMarkMessage(){
@@ -24,6 +25,10 @@ public class BookMarkMessage extends AddMessage {
     });
 
 }
+
+    public void icon(Image img){
+        setIcon(img);
+    }
 
     public void continoue(){
         NewTab.bookMarks.add(text2.getText() , text1.getText());

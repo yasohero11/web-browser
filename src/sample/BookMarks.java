@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ToolBar;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -30,6 +31,7 @@ public class BookMarks{
 
         box =  new ChoiceBox();
         bookMarkMessage = new BookMarkMessage();
+        bookMarkMessage.icon(new Image("images/bookmark.png"));
         editMessage = new BookMarkEdit(box);
         toolBar.getItems().addAll(edit,add);
 

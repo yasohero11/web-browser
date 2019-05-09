@@ -6,13 +6,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class PopUpMessage {
+import javax.swing.text.html.ImageView;
+
+public abstract class PopUpMessage {
     private BorderPane layout ;
     private Stage frame;
     private Button save ;
@@ -38,42 +41,44 @@ public class PopUpMessage {
         close.setOnAction(e->close());
     }
 
-    public Button getSave() {
+    protected Button getSave() {
         return save;
     }
 
-    public Button getExit() {
+    protected Button getExit() {
         return close;
     }
 
 
-    public void setBottom(Node item){
+    protected void setBottom(Node item){
       bottomLayout.getChildren().add(1 , item);
     }
-    public void setCenter(Pane centerLayout){
+    protected void setCenter(Pane centerLayout){
         layout.setCenter(centerLayout);
     }
-    public void show(){
+    protected void show(){
         frame.show();
     }
-    public void close(){
+    protected void close(){
         frame.close();
     }
 
-    public void setContiue(boolean contiue) {
+    protected void setContiue(boolean contiue) {
         this.contiue = contiue;
     }
 
-    public boolean getContinue(){
+    protected boolean getContinue(){
         return contiue;
     }
 
-    public void setTittle(String tittle){
+    protected void setTittle(String tittle){
         frame.setTitle(tittle);
     }
 
-
-    public BorderPane getLayout() {
+     protected void setIcon(Image img){
+         frame.getIcons().add(img);
+     }
+    protected BorderPane getLayout() {
         return layout;
     }
 

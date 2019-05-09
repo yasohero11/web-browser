@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
@@ -19,6 +20,7 @@ public class EditMessage  extends PopUpMessage{
     private Button delete;
     private Button clear;
     public EditMessage(ChoiceBox box) {
+        setIcon(new Image("images/edit.png"));
         pane = new GridPane();
         pane.setHgap(20);
         delete = new Button("Delete");

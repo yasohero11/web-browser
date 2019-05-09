@@ -2,6 +2,7 @@ package sample;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.image.Image;
 
 public class EasyButtonEdit extends EditMessage {
     private Button save;
@@ -9,7 +10,6 @@ public class EasyButtonEdit extends EditMessage {
     private Button clear;
     EasyButtonEdit(ChoiceBox box){
         super(box);
-
         save = getSave();
         clear = getClear();
         delete = getDelete();

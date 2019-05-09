@@ -3,6 +3,7 @@
 import com.jfoenix.controls.JFXButton;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.text.Font;
 
@@ -18,6 +19,7 @@ import java.util.logging.Logger;
      private static Random random = new Random();
      ChoiceBox box;
      EasyButtonMessage(LinkedList<BookMarkNode> list , FlowPane layout , ChoiceBox box ){
+         setIcon(new Image("images/add.png"));
          this.layout = layout;
          this.list= list;
          this.box = box;

@@ -5,11 +5,13 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -37,6 +39,8 @@ public class History {
         window.initModality(Modality.APPLICATION_MODAL);
         pane2 = new HistoryPane(800, 600, 50);
         frame = new Scene(pane2, 800, 600);
+        window.setResizable(false);
+        window.getIcons().add(new Image("images/history.png"));
         window.setScene(frame);
     }
 
@@ -90,7 +94,7 @@ public class History {
 
     private void syce() {
         pane2 = new HistoryPane(800, 600, 50);
-        pane2.setSpacing(15);
+        pane2.setSpacing(20);
         frame = new Scene(pane2, 800, 600);
         window.setScene(frame);
         for (int i = 0; i < list.size(); i++)
@@ -102,7 +106,8 @@ public class History {
         Text text2 = new Text(historyNode.getDate() +" -- " + historyNode.getTime());
         setFont(text1);
         setFont(text2);
-        pane2.setSpacing(15);
+        pane2.setSpacing(20);
+        historyNode.closeButton.setAlignment(Pos.CENTER);
         pane2.add(text1, text2, historyNode.closeButton);
 
 

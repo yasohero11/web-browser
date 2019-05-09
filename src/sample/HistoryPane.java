@@ -23,6 +23,8 @@ public class HistoryPane extends Pane {
         dateLayout = new VBox();
         centerLayout = new FlowPane();
         layout.setPrefSize(width , height);
+        linkLayout.setPrefHeight(height);
+        dateLayout.setPrefHeight(height);
         linkLayout.setPrefWidth((width-rightSize)/2);
         dateLayout.setPrefWidth((width-rightSize)/2);
         rightLayout.setPrefWidth(rightSize);
@@ -30,14 +32,20 @@ public class HistoryPane extends Pane {
         layout.setCenter(centerLayout);
         layout.setRight(rightLayout);
         mainPane.setContent(layout);
+        setColor("#ED5573");
         getChildren().add(mainPane);
     }
 
     public void setSpacing(int size){
         linkLayout.setSpacing(size);
         dateLayout.setSpacing(size);
-        rightLayout.setSpacing(size);
+        rightLayout.setSpacing(size+2);
 
+    }
+    private void setColor(String color){
+        linkLayout.setStyle("-fx-background-color :" + color);
+        dateLayout.setStyle("-fx-background-color :" + color);
+        rightLayout.setStyle("-fx-background-color :" + color);
     }
     public void setDatePadding(int size) {
         dateLayout.setPadding(new Insets(0,0,0,size));
