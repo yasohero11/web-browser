@@ -1,9 +1,6 @@
 package sample;
 
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Cursor;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -50,18 +47,18 @@ public class TabClass {
         text2.setMinHeight(30);
         text2.setMinWidth(800);
         text2.setPromptText("Search...");
-        searchButton = new JFXButton("" , setImage("sample/search.png" , 22 , 22));
-        backButton = new JFXButton("",setImage("sample/back.png" , 22 , 22));
-        forwardButton = new JFXButton(""  , setImage("sample/forward.png" , 22 , 22));
-        restartButton = new JFXButton("" , setImage("sample/restart.png" , 22 , 22));
-        homeButton = new JFXButton("" , setImage("sample/brower.png" ,50 ,50));
+        searchButton = new JFXButton("" , setImage("images/search.png", 22 , 22));
+        backButton = new JFXButton("",setImage("images/back.png", 22 , 22));
+        forwardButton = new JFXButton(""  , setImage("images/forward.png", 22 , 22));
+        restartButton = new JFXButton("" , setImage("images/restart.png", 22 , 22));
+        homeButton = new JFXButton("" , setImage("images/brower.png",50 ,50));
         homeButton.setId("homeButton");
         forwardButton.setDisable(true);
         backButton.setDisable(true);
         restartButton.setDisable(true);
         toolBar.getItems().addAll(homeButton ,backButton , forwardButton , restartButton , text1 , searchButton , historyButton );
         layout.setTop(toolBar);
-        ImageView logo = setImage("sample/brower.png" , 200 , 200);
+        ImageView logo = setImage("images/brower.png", 200 , 200);
         logo.setX(570);
         centerLayout = new Pane();
         title = new Text("Candy Butcher");
