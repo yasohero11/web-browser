@@ -140,12 +140,15 @@ public class TabClass {
         });
         homeButton.setOnMouseClicked(e->
         {
-            layout.setCenter(centerLayout);
-            text1.setText("");
-            text2.setText("");
-            tabHistory.reset();
-            restartButton.setDisable(true);
-            check();
+                layout.setCenter(centerLayout);
+                text1.setText("");
+                text2.setText("");
+                tabHistory.reset();
+                restartButton.setDisable(true);
+                check();
+            if(!tab.getText().equals("main tab")) {
+                tab.setText("new tab");
+            }
         });
     }
     public boolean isSelected(){
@@ -207,8 +210,10 @@ public class TabClass {
    }
 
    public void setTabTiltle(){
-       String text = text1.getText();
-       tab.setText(text.substring(text.indexOf(".")+1 , text.lastIndexOf(".")));
+       if(!tab.getText().equals("main tab")) {
+           String text = text1.getText();
+           tab.setText(text.substring(text.indexOf(".") + 1, text.lastIndexOf(".")));
+       }
    }
 
 }
