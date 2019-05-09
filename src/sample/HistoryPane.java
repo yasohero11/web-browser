@@ -9,12 +9,12 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
 public class HistoryPane extends Pane {
-    ScrollPane mainPane;
-    BorderPane layout;
-    FlowPane centerLayout;
-    VBox rightLayout;
-    VBox linkLayout;
-    VBox dateLayout;
+   private ScrollPane mainPane;
+   private BorderPane layout;
+   private FlowPane centerLayout;
+   private VBox rightLayout;
+   private VBox linkLayout;
+   private VBox dateLayout;
     HistoryPane(int width , int height , int rightSize){
         mainPane = new ScrollPane();
         layout = new BorderPane();

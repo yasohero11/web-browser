@@ -6,9 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="update">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="tab text update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TabClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TabClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/History$HistoryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/History$HistoryNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/HistoryPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/HistoryPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HistoryPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HistoryPane.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/TabClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+              <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
               <folding>
                 <element signature="e#5288#5289#0" expanded="true" />
                 <element signature="e#5327#5328#0" expanded="true" />
@@ -78,6 +83,44 @@
                 <element signature="e#6356#6357#0" expanded="true" />
                 <element signature="e#6491#6492#0" expanded="true" />
                 <element signature="e#6525#6526#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="879">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/History.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-576">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding>
+                <element signature="e#3908#3909#0" expanded="true" />
+                <element signature="e#3937#3938#0" expanded="true" />
+                <element signature="e#3976#3977#0" expanded="true" />
+                <element signature="e#4019#4020#0" expanded="true" />
+                <element signature="e#5478#5479#0" expanded="true" />
+                <element signature="e#5518#5519#0" expanded="true" />
+                <element signature="e#5562#5563#0" expanded="true" />
+                <element signature="e#5602#5603#0" expanded="true" />
+                <element signature="e#5637#5638#0" expanded="true" />
+                <element signature="e#5672#5673#0" expanded="true" />
+                <element signature="e#5717#5718#0" expanded="true" />
+                <element signature="e#5765#5766#0" expanded="true" />
+                <element signature="e#5800#5801#0" expanded="true" />
+                <element signature="e#5835#5836#0" expanded="true" />
+                <element signature="e#5869#5870#0" expanded="true" />
+                <element signature="e#5903#5904#0" expanded="true" />
+                <element signature="e#5957#5958#0" expanded="true" />
+                <element signature="e#6017#6018#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,21 +148,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebBrowser.iml">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/images/search.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -173,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/sample/Tab.java" />
         <option value="$PROJECT_DIR$/src/TabHistory.java" />
         <option value="G:/Browser/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/HistoryPane.java" />
         <option value="$PROJECT_DIR$/src/sample/addMessage.java" />
         <option value="$PROJECT_DIR$/src/sample/bookMarkStage.java" />
         <option value="$PROJECT_DIR$/src/sample/DeleteMessage.java" />
@@ -192,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/sample/TabHistory.java" />
         <option value="$PROJECT_DIR$/src/sample/EasyButtons.java" />
         <option value="$PROJECT_DIR$/src/sample/PopUpMessage.java" />
-        <option value="$PROJECT_DIR$/src/sample/History.java" />
         <option value="$PROJECT_DIR$/src/sample/BookMarkEdit.java" />
         <option value="$PROJECT_DIR$/src/sample/EasyButtonEdit.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
@@ -200,6 +226,8 @@
         <option value="$PROJECT_DIR$/src/sample/style.css" />
         <option value="$PROJECT_DIR$/src/sample/NewTab.java" />
         <option value="$PROJECT_DIR$/src/sample/TabClass.java" />
+        <option value="$PROJECT_DIR$/src/sample/HistoryPane.java" />
+        <option value="$PROJECT_DIR$/src/sample/History.java" />
       </list>
     </option>
   </component>
@@ -264,7 +292,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557410900887" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557413251609" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -428,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557407041171</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="tab text update">
+      <created>1557410850704</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557410850704</updated>
+    </task>
+    <task id="LOCAL-00009" summary="tab text update">
+      <created>1557410907905</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557410907905</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -436,9 +478,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.3022388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.3022388" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -447,7 +488,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25568798" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25568798" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -486,7 +527,8 @@
     <MESSAGE value="fourth commit" />
     <MESSAGE value="update the size" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="tab text update" />
+    <option name="LAST_COMMIT_MESSAGE" value="tab text update" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -516,7 +558,6 @@
     <entry file="file://G:/WebSite/src/sample/History.java" />
     <entry file="file://$USER_HOME$/Desktop/WebSite/src/sample/History.java" />
     <entry file="file://$USER_HOME$/Desktop/WebSite/src/sample/TabHistory.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/BookMarkEditMessage.java" />
     <entry file="file://$PROJECT_DIR$/src/images/forward.png" />
     <entry file="file://$PROJECT_DIR$/src/sample/buttons.java" />
@@ -539,7 +580,6 @@
     <entry file="file://$PROJECT_DIR$/src/sample/EasyButtons.java" />
     <entry file="file://$PROJECT_DIR$/src/images/restart.png" />
     <entry file="file://$PROJECT_DIR$/src/sample/EasyButtonEdit.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/History.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/BookMarks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -627,7 +667,7 @@
     <entry file="file://$PROJECT_DIR$/src/sample/TabClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+          <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
           <folding>
             <element signature="e#5288#5289#0" expanded="true" />
             <element signature="e#5327#5328#0" expanded="true" />
@@ -636,6 +676,40 @@
             <element signature="e#6356#6357#0" expanded="true" />
             <element signature="e#6491#6492#0" expanded="true" />
             <element signature="e#6525#6526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#3937#3938#0" expanded="true" />
+            <element signature="e#3976#3977#0" expanded="true" />
+            <element signature="e#4019#4020#0" expanded="true" />
+            <element signature="e#5478#5479#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#5562#5563#0" expanded="true" />
+            <element signature="e#5602#5603#0" expanded="true" />
+            <element signature="e#5637#5638#0" expanded="true" />
+            <element signature="e#5672#5673#0" expanded="true" />
+            <element signature="e#5717#5718#0" expanded="true" />
+            <element signature="e#5765#5766#0" expanded="true" />
+            <element signature="e#5800#5801#0" expanded="true" />
+            <element signature="e#5835#5836#0" expanded="true" />
+            <element signature="e#5869#5870#0" expanded="true" />
+            <element signature="e#5903#5904#0" expanded="true" />
+            <element signature="e#5957#5958#0" expanded="true" />
+            <element signature="e#6017#6018#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -35,8 +35,8 @@ public class History {
         window = new Stage();
         window.setTitle("History");
         window.initModality(Modality.APPLICATION_MODAL);
-        pane2 = new HistoryPane(700, 600, 50);
-        frame = new Scene(pane2, 700, 600);
+        pane2 = new HistoryPane(800, 600, 50);
+        frame = new Scene(pane2, 800, 600);
         window.setScene(frame);
     }
 
@@ -89,19 +89,17 @@ public class History {
     }
 
     private void syce() {
-        pane2 = new HistoryPane(700, 700, 50);
+        pane2 = new HistoryPane(800, 600, 50);
         pane2.setSpacing(15);
-        frame = new Scene(pane2, 700, 700);
+        frame = new Scene(pane2, 800, 600);
         window.setScene(frame);
         for (int i = 0; i < list.size(); i++)
             setLayout(list.get(i));
-
-
     }
 
     public void setLayout(HistoryNode historyNode) {
         Text text1 = new Text(historyNode.getUrl());
-        Text text2 = new Text(historyNode.getDate() + historyNode.getTime());
+        Text text2 = new Text(historyNode.getDate() +" -- " + historyNode.getTime());
         setFont(text1);
         setFont(text2);
         pane2.setSpacing(15);
