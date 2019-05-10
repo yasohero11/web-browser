@@ -22,6 +22,7 @@ public class Main extends Application {
             NewTab.bookMarks.write();
             NewTab.history.write();
             NewTab.easyButtons.easyButtonMessage.write();
+            NewTab.settings.colorSettings.write();
             primaryStage.close();
         });
         primaryStage.getIcons().add(new Image("images/brower.png"));

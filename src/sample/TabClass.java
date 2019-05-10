@@ -25,6 +25,7 @@ public class TabClass {
     private WebView web;
     private JFXButton historyButton;
     private JFXButton homeButton;
+    private JFXButton settingsButton;
     public TabHistory tabHistory;
     private  FlowPane easyButtonsLayout =  new FlowPane();
     private Tab tab;
@@ -52,6 +53,10 @@ public class TabClass {
         forwardButton = new JFXButton(""  , setImage("images/forward.png", 22 , 22));
         restartButton = new JFXButton("" , setImage("images/restart.png", 22 , 22));
         homeButton = new JFXButton("" , setImage("images/brower.png",50 ,50));
+        settingsButton = new JFXButton("" , setImage("images/settings.png" , 20 , 20));
+        settingsButton.setId("settingsButton");
+        settingsButton.setLayoutX(1300);
+        settingsButton.setLayoutY(20);
         homeButton.setId("homeButton");
         forwardButton.setDisable(true);
         backButton.setDisable(true);
@@ -71,7 +76,7 @@ public class TabClass {
         edit.setLayoutX(570);
         edit.setLayoutY(370);
         edit.setPrefSize(200 , 40);
-        centerLayout.getChildren().addAll(title , text2 , logo , edit);
+        centerLayout.getChildren().addAll(title , text2 , logo , edit , settingsButton);
         text1.setAlignment(Pos.CENTER);
         text1.setUnFocusColor(Paint.valueOf("#44DA26"));
         text1.setFocusColor(Paint.valueOf("#F2F07D"));
@@ -107,6 +112,7 @@ public class TabClass {
 
         historyButton.setOnAction(e->NewTab.history.show());
         edit.setOnAction(e->NewTab.easyButtons.edit.show());
+        settingsButton.setOnAction(e->NewTab.settings.show());
 
     }
 

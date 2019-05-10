@@ -14,6 +14,7 @@ public class NewTab implements EventHandler<Event> {
     public static JFXTabPane pane;
     public static History history = new History();
     public static  EasyButtons easyButtons = new EasyButtons();
+    public static Settings settings;
     private Tab mainTab;
     private Tab newTab;
     public static BookMarks bookMarks;
@@ -26,6 +27,7 @@ public class NewTab implements EventHandler<Event> {
         this.mainTab = mainTab;
         bookMarks = new BookMarks();
         tabList = new LinkedList<>();
+        settings = new Settings();
         TabClass tabClass = new TabClass(mainTab);
         tabList.add(tabClass);
         mainTab.setContent(tabClass.getLayout());

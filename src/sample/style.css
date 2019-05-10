@@ -32,6 +32,9 @@
 #homeButton{
 -fx-background-color: transparent;
 }
+#settingsButton{
+-fx-background-color: transparent;
+}
 
 
 .tab-header-background{
@@ -64,7 +67,6 @@
 
 .jfx-tab-pane{
     -fx-background-color: #5DADE2;
-
 }
 
 .jfx-tab-pane .tab-header-area .jfx-rippler {
