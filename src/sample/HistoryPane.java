@@ -32,7 +32,6 @@ public class HistoryPane extends Pane {
         layout.setCenter(centerLayout);
         layout.setRight(rightLayout);
         mainPane.setContent(layout);
-        setColor("#ED5573");
         getChildren().add(mainPane);
     }
 
@@ -42,7 +41,7 @@ public class HistoryPane extends Pane {
         rightLayout.setSpacing(size+2);
 
     }
-    private void setColor(String color){
+    public void setColor(String color){
         linkLayout.setStyle("-fx-background-color :" + color);
         dateLayout.setStyle("-fx-background-color :" + color);
         rightLayout.setStyle("-fx-background-color :" + color);

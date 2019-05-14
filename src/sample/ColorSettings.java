@@ -4,8 +4,10 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ColorPicker;
+import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -20,22 +22,35 @@ public class ColorSettings {
     private Circle circle;
     private ColorPicker colorPicker;
     private FlowPane layout;
-    ColorSettings(){
+    Node pane;
+    String fileName;
+    ColorSettings(Node pane  , String fileName){
+
+        this.fileName = fileName;
         layout = new FlowPane();
         layout.setAlignment(Pos.TOP_CENTER);
         layout.setVgap(20);
         circle = new Circle(50);
         colorPicker = new ColorPicker();
+
         read();
         circle.setFill(colorPicker.getValue());
+        if(pane instanceof TabPane)
+            pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
+        else
+            ((HistoryPane)pane).setColor(format(colorPicker.getValue().toString()));
+
+
         //NewTab.pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
         colorPicker.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
             public void handle(ActionEvent event) {
                 circle.setFill(colorPicker.getValue());
-                NewTab.pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
-
+                if(pane instanceof TabPane)
+                pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
+                else
+                    ((HistoryPane)pane).setColor(format(colorPicker.getValue().toString()));
             }
         });
         layout.setPadding(new Insets(10));
@@ -52,12 +67,11 @@ public class ColorSettings {
 
         BufferedReader bfr;
         try {
-            File file = new File("background.txt");
+            File file = new File(fileName);
             if(file.exists()) {
-                bfr = new BufferedReader(new FileReader("background.txt"));
+                bfr = new BufferedReader(new FileReader(fileName));
                 String style = format(bfr.readLine());
                if(style != null) {
-                   NewTab.pane.setStyle("-fx-background-color:" + style);
                    colorPicker.setValue(Color.web(style));
                }
 
@@ -65,8 +79,6 @@ public class ColorSettings {
             }
             else
                 colorPicker.setValue(Color.web("#5dade2"));
-
-
         }catch (IOException e) {
             e.printStackTrace();
         }
@@ -77,7 +89,7 @@ public class ColorSettings {
     public void write(){
         PrintWriter writer;
         try {
-            writer = new PrintWriter("background.txt");
+            writer = new PrintWriter(fileName);
             writer.println(colorPicker.getValue().toString());
             writer.close();
         } catch (FileNotFoundException ex) {

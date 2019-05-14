@@ -3,6 +3,7 @@
 import com.jfoenix.controls.JFXButton;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.text.Font;
@@ -26,11 +27,12 @@ import java.util.logging.Logger;
          setTittle("Easy Buttons");
      }
     @Override
-    public void continoue() {
+    public void continueOperation() {
         BookMarkNode node = new BookMarkNode(text2.getText(), text1.getText(), 65);
         node.getButton().setText(text1.getText().substring(0,1).toUpperCase());
         node.getButton().setFont(Font.font(20));
         node.getButton().setStyle("-fx-background-color:" +  color());
+        node.getButton().setTooltip(new Tooltip(text1.getText()));
         box.getItems().add(node.getName());
         box.getSelectionModel().select(0);
         if (list.size() < 5) {
@@ -101,7 +103,7 @@ import java.util.logging.Logger;
                          name = line.substring(line.indexOf('$') + 1, line.length());
                          text2.setText(url);
                          text1.setText(name);
-                         continoue();
+                         continueOperation();
                      }
                  }
                  bfr.close();

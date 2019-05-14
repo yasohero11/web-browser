@@ -3,6 +3,7 @@ package sample;
 
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCode;
 
 public class BookMarkMessage extends AddMessage{
     private Button save;
@@ -19,10 +20,17 @@ public class BookMarkMessage extends AddMessage{
         save.setOnAction(e->{
 
         if(text1.getText().length() != 0 && text2.getText().length() != 0)
-            continoue();
-
+            continueOperation();
+             close();
+        });
+        /*
+        save.setOnKeyPressed(e->{
+            if(text1.getText().length() != 0 && text2.getText().length() != 0)
+    if(e.getCode() == KeyCode.ENTER){
+        continueOperation();
         close();
-    });
+    }});
+    */
 
 }
 
@@ -30,7 +38,7 @@ public class BookMarkMessage extends AddMessage{
         setIcon(img);
     }
 
-    public void continoue(){
+    public void continueOperation(){
         NewTab.bookMarks.add(text2.getText() , text1.getText());
         text1.setText("");
         text2.setText("");

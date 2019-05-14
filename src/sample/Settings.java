@@ -11,6 +11,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -22,21 +23,27 @@ public class Settings {
 
     private Stage window;
     private Scene frame;
-    public ColorSettings colorSettings;
+    public ColorSettings backgroundColor;
+    public  ColorSettings HistoryColor;
     private  BorderPane layout;
     private ListView listView;
    Settings(){
-       colorSettings = new ColorSettings();
+       backgroundColor = new ColorSettings(NewTab.pane , "background.txt");
+       HistoryColor = new ColorSettings(NewTab.history.pane2 , "historycolor.txt");
        layout = new BorderPane();
        listView = new ListView();
        listView.setPrefSize(150 , 400);
        frame = new Scene(layout , 400 , 400);
        window = new Stage();
-       listView.getItems().addAll("Color Settings" , "other");
+       window.initModality(Modality.APPLICATION_MODAL);
+       listView.getItems().addAll("Background Color" ,"Background History Color", "other");
        layout.setLeft(listView);
        listView.getSelectionModel().selectedItemProperty().addListener(e->{
            if(listView.getSelectionModel().isSelected(0)){
-               layout.setCenter(colorSettings.getColorLayout() );
+               layout.setCenter(backgroundColor.getColorLayout());
+           }
+           else if(listView.getSelectionModel().isSelected(1)){
+               layout.setCenter(HistoryColor.getColorLayout());
            }
            /*
            else {
