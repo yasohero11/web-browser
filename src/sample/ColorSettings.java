@@ -1,32 +1,24 @@
 package sample;
 
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TabPane;
-import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.stage.Stage;
 
-import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-public class ColorSettings {
+public class ColorSettings extends  BackgroundRW{
     private Circle circle;
     private ColorPicker colorPicker;
     private FlowPane layout;
     Node pane;
-    String fileName;
     ColorSettings(Node pane  , String fileName){
-
-        this.fileName = fileName;
+        super(fileName);
         layout = new FlowPane();
         layout.setAlignment(Pos.TOP_CENTER);
         layout.setVgap(20);
@@ -34,23 +26,51 @@ public class ColorSettings {
         colorPicker = new ColorPicker();
 
         read();
-        circle.setFill(colorPicker.getValue());
-        if(pane instanceof TabPane)
-            pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
+        if(isColor()) {
+            colorPicker.setValue(Color.web(getBackground()));
+            circle.setFill(colorPicker.getValue());
+        }
         else
-            ((HistoryPane)pane).setColor(format(colorPicker.getValue().toString()));
+            reset();
 
 
+        if(pane instanceof TabPane) {
+            if (isColor())
+                pane.setStyle("-fx-background-color:" + getBackground());
+        }
+        else
+            ((HistoryPane) pane).setColor(getBackground());
+
+
+/*
+        NewTab.tabList.addListener(new ListChangeListener<TabClass>() {
+            @Override
+            public void onChanged(Change<? extends TabClass> c) {
+                System.out.println("en");
+               NewTab.tabList.get(NewTab.tabList.size()-1).setBackhgroundColor("-fx-background-color:" + color);
+            }
+        });
+
+*/
         //NewTab.pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
-        colorPicker.setOnAction(new EventHandler<ActionEvent>() {
 
+        colorPicker.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 circle.setFill(colorPicker.getValue());
-                if(pane instanceof TabPane)
-                pane.setStyle("-fx-background-color:" + format(colorPicker.getValue().toString()));
-                else
-                    ((HistoryPane)pane).setColor(format(colorPicker.getValue().toString()));
+                if(pane instanceof TabPane) {
+
+                    for(int i = 0 ;  i < NewTab.tabList.size(); i++) {
+                        // NewTab.tabList.get(i).setBackhgroundColor("-fx-background-color:" + format(colorPicker.getValue().toString()));
+                        NewTab.tabList.get(i).setBackhgroundColor("-fx-background-color:" + format(colorPicker.getValue().toString()));
+                    }
+                    setBackground(format(colorPicker.getValue().toString()));
+                    pane.setStyle("-fx-background-color:" + getBackground());
+                }
+                else {
+                    ((HistoryPane) pane).setColor(format(colorPicker.getValue().toString()));
+                    setBackground(format(colorPicker.getValue().toString()));
+                }
             }
         });
         layout.setPadding(new Insets(10));
@@ -59,43 +79,13 @@ public class ColorSettings {
     }
 
 
-    private String format(String color){
-
-        return "#" + color.substring(2 , color.length()-2);
-    }
-    private void read() {
-
-        BufferedReader bfr;
-        try {
-            File file = new File(fileName);
-            if(file.exists()) {
-                bfr = new BufferedReader(new FileReader(fileName));
-                String style = format(bfr.readLine());
-               if(style != null) {
-                   colorPicker.setValue(Color.web(style));
-               }
-
-                bfr.close();
-            }
-            else
-                colorPicker.setValue(Color.web("#5dade2"));
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
 
+     public void reset(){
+         colorPicker.setValue(Color.WHITE);
+         circle.setFill(colorPicker.getValue());
+     }
 
-    public void write(){
-        PrintWriter writer;
-        try {
-            writer = new PrintWriter(fileName);
-            writer.println(colorPicker.getValue().toString());
-            writer.close();
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(BookMarks.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
 
     public FlowPane getColorLayout() {
         return layout;

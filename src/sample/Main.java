@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
@@ -22,11 +23,18 @@ public class Main extends Application {
             NewTab.bookMarks.write();
             NewTab.history.write();
             NewTab.easyButtons.easyButtonMessage.write();
-            NewTab.settings.backgroundColor.write();
+
+           if(NewTab.tabList.get(0).colored) {
+               NewTab.settings.backgroundColor.write();
+           }
+           else
+              NewTab.settings.imageSettings.write();
+
             NewTab.settings.HistoryColor.write();
             primaryStage.close();
         });
         primaryStage.getIcons().add(new Image("images/brower.png"));
+       // primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setResizable(false);
         primaryStage.show();
 

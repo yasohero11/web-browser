@@ -17,6 +17,7 @@ public class HistoryPane extends Pane {
    private VBox dateLayout;
     HistoryPane(int width , int height , int rightSize){
         mainPane = new ScrollPane();
+        mainPane.setPrefSize(width+10 , height+10);
         layout = new BorderPane();
         rightLayout = new VBox();
         linkLayout = new VBox();
@@ -40,6 +41,11 @@ public class HistoryPane extends Pane {
         dateLayout.setSpacing(size);
         rightLayout.setSpacing(size+2);
 
+    }
+    public void remove(int index){
+        linkLayout.getChildren().remove(index);
+        dateLayout.getChildren().remove(index);
+        rightLayout.getChildren().remove(index);
     }
     public void setColor(String color){
         linkLayout.setStyle("-fx-background-color :" + color);

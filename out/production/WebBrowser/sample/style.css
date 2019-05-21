@@ -14,6 +14,14 @@
 
 }
 
+#close{
+ -fx-font-size: 12;
+}
+#min{
+-fx-pref-width: 10px;
+-fx-font-size: 12;
+}
+
 .tool-bar{
 -fx-background-color : #515A5A  ;
 }
@@ -64,13 +72,17 @@
 -fx-pref-height: 40;
 }
 
-
+/*
 .jfx-tab-pane{
     -fx-background-color: #5DADE2;
 }
-
+*/
 .jfx-tab-pane .tab-header-area .jfx-rippler {
     -jfx-rippler-fill: #4A235A;
+}
+.tab-debt {
+  -fx-background-image: url("images/image.jpg");
+  -fx-background-size: cover ;
 }
 
 /*

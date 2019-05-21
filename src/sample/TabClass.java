@@ -2,12 +2,14 @@ package sample;
 
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 import com.jfoenix.controls.*;
 public class TabClass {
@@ -30,53 +32,61 @@ public class TabClass {
     private  FlowPane easyButtonsLayout =  new FlowPane();
     private Tab tab;
     private JFXButton edit;
+    public StackPane backhground;
+    public boolean colored;
+
 
 
 
    private TabClass(){
-        web = new WebView();
-        text1 = new JFXTextField();
-        text2 = new TextField();
-        toolBar = new ToolBar();
-        layout = new BorderPane();
-        historyButton = new JFXButton("H");
-        historyButton.setId("history");
-        text1.setMinHeight(30);
-        text1.setAlignment(Pos.CENTER);
-        text1.setMinWidth(1050);
-        text1.setPromptText("Search...");
-        text2.setMinHeight(30);
-        text2.setMinWidth(800);
-        text2.setPromptText("Search...");
-        searchButton = new JFXButton("" , setImage("images/search.png", 22 , 22));
-        backButton = new JFXButton("",setImage("images/back.png", 22 , 22));
-        forwardButton = new JFXButton(""  , setImage("images/forward.png", 22 , 22));
-        restartButton = new JFXButton("" , setImage("images/restart.png", 22 , 22));
-        homeButton = new JFXButton("" , setImage("images/brower.png",50 ,50));
-        settingsButton = new JFXButton("" , setImage("images/settings.png" , 20 , 20));
-        settingsButton.setId("settingsButton");
-        settingsButton.setLayoutX(1300);
-        settingsButton.setLayoutY(20);
-        homeButton.setId("homeButton");
-        forwardButton.setDisable(true);
-        backButton.setDisable(true);
-        restartButton.setDisable(true);
-        toolBar.getItems().addAll(homeButton ,backButton , forwardButton , restartButton , text1 , searchButton , historyButton );
-        layout.setTop(toolBar);
-        ImageView logo = setImage("images/brower.png", 200 , 200);
-        logo.setX(570);
-        centerLayout = new Pane();
-        title = new Text("Candy Butcher");
-        title.setFont(Font.font("Verdana",30));
-        title.setX(560);
-        title.setY(170);
-        text2.setLayoutX(280);
-        text2.setLayoutY(220);
-        edit = new JFXButton("Edit Easy Button");
-        edit.setLayoutX(570);
-        edit.setLayoutY(370);
+
+       backhground = new StackPane();
+       backhground.setPrefSize(1360, 466);
+           text1 = new JFXTextField();
+           text2 = new TextField();
+           toolBar = new ToolBar();
+           layout = new BorderPane();
+           historyButton = new JFXButton("H");
+           historyButton.setId("history");
+           text1.setMinHeight(30);
+           text1.setAlignment(Pos.CENTER);
+           text1.setMinWidth(1050);
+           text1.setPromptText("Search...");
+           text2.setMinHeight(30);
+           text2.setMinWidth(800);
+           text2.setPromptText("Search...");
+
+           searchButton = new JFXButton("", setImage("images/search.png", 22, 22));
+           backButton = new JFXButton("", setImage("images/back.png", 22, 22));
+           forwardButton = new JFXButton("", setImage("images/forward.png", 22, 22));
+           restartButton = new JFXButton("", setImage("images/restart.png", 22, 22));
+           homeButton = new JFXButton("", setImage("images/brower.png", 50, 50));
+           settingsButton = new JFXButton("", setImage("images/settings4.png", 20, 20));
+           settingsButton.setId("settingsButton");
+           settingsButton.setLayoutX(1300);
+           settingsButton.setLayoutY(20);
+
+           homeButton.setId("homeButton");
+           forwardButton.setDisable(true);
+           backButton.setDisable(true);
+           restartButton.setDisable(true);
+           toolBar.getItems().addAll(homeButton, backButton, forwardButton, restartButton, text1, searchButton, historyButton);
+           layout.setTop(toolBar);
+           ImageView logo = setImage("images/brower.png", 200, 200);
+           logo.setX(570);
+           centerLayout = new Pane();
+           title = new Text("Candy Butcher");
+           title.setFont(Font.font("Verdana", 30));
+           title.setX(560);
+           title.setY(170);
+           text2.setLayoutX(280);
+           text2.setLayoutY(220);
+           edit = new JFXButton("Edit Easy Button");
+           edit.setLayoutX(570);
+           edit.setLayoutY(370);
+
         edit.setPrefSize(200 , 40);
-        centerLayout.getChildren().addAll(title , text2 , logo , edit , settingsButton);
+        centerLayout.getChildren().addAll(backhground,title , text2 , logo , edit , settingsButton);
         text1.setAlignment(Pos.CENTER);
         text1.setUnFocusColor(Paint.valueOf("#44DA26"));
         text1.setFocusColor(Paint.valueOf("#F2F07D"));
@@ -177,13 +187,35 @@ public class TabClass {
 
     }
 
-    public void browse(){
 
+    public void setBackhgroundColor(String color) {
+            backhground.getChildren().clear();
+            backhground.setStyle(color);
+            colored = true;
+            if(NewTab.settings.imageSettings.ImageSelected()){
+                NewTab.settings.imageSettings.reset();
+            }
+    }
+
+    public void setBackhgroundImage(Image image) {
+        backhground.getChildren().clear();
+        ImageView imageView = new ImageView(image);
+        imageView.setFitHeight(466);
+        imageView.setFitWidth(1360);
+        colored = false;
+        backhground.getChildren().add(imageView);
+    }
+
+    public void browse(){
+        web = new WebView();
         WebEngine engine = web.getEngine();
         checkUrl();
         setTabTiltle();
         engine.load(text1.getText());
-        NewTab.history.add(text1.getText());
+
+        System.out.println(engine.getLocation());
+       // System.out.println(engine.getHistory().getEntries().get(engine.getHistory().getEntries().size()));
+        NewTab.history.add(engine.getLocation());
         layout.setCenter(web);
     }
     private void setSize(JFXButton button , int size){
@@ -213,6 +245,8 @@ public class TabClass {
            if(!text1.getText().startsWith("https://"))
            text1.setText("https://www." + text1.getText());
        }
+       if(!text1.getText().endsWith(".com"))
+           text1.setText( text1.getText()+".com");
    }
 
    public void setTabTiltle(){

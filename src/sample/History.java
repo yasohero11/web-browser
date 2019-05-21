@@ -91,7 +91,7 @@ public class History {
             list.add(history.get(i));
         }
     }
-
+/*
     private void syce() {
         pane2 = new HistoryPane(800, 600, 50);
         pane2.setSpacing(20);
@@ -100,7 +100,7 @@ public class History {
         for (int i = 0; i < list.size(); i++)
             setLayout(list.get(i));
     }
-
+*/
     public void setLayout(HistoryNode historyNode) {
         Text text1 = new Text(historyNode.getUrl());
         Text text2 = new Text(historyNode.getDate() +" -- " + historyNode.getTime());
@@ -187,8 +187,9 @@ public class History {
             closeButton.setOnAction(e -> {
                 for (int i = 0; i < list.size(); i++) {
                     if (numberOfTheObject == list.get(i).numberOfTheObject) {
+                        pane2.remove((list.size()-1)-i);
                         list.remove(i);
-                        syce();
+                        i = list.size();
                     }
 
                 }

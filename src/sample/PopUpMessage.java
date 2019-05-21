@@ -28,6 +28,7 @@ public abstract class PopUpMessage {
         frame = new Stage();
         frame.setTitle("Pop Up Message");
         frame.initModality(Modality.APPLICATION_MODAL);
+        frame.setResizable(false);
         save = new Button("Save");
         close = new Button("Close");
         bottomLayout.getChildren().addAll(save, close);
