@@ -25,14 +25,16 @@ public class MoodSettings {
         public static String currentMood = "-fx-background-radius :30;";
         MoodSettings(){
             layout = new VBox();
-            mood1 = new JFXButton("" ,NewTab.setImage("images/mood1.png" ,265 , 100));
+            mood1 = new JFXButton("" ,NewTab.setImage("images/mood1.PNG" ,265 , 100));
             mood1.setPrefSize(100 , 70);
-            mood2 = new JFXButton("" ,  NewTab.setImage("images/mood2.png" , 265 , 100));
+            mood2 = new JFXButton("" ,  NewTab.setImage("images/mood2.PNG" , 265 , 100));
             layout.setSpacing(100);
             layout.getChildren().addAll(mood1 , mood2);
             list =  NewTab.easyButtons.list;
             pane =  NewTab.easyButtons.layout;
+
             read();
+
             EventHandler<ActionEvent> event = e->{
                 if(e.getSource() == mood1) {
                     currentMood = "-fx-background-radius :12;";
@@ -62,6 +64,8 @@ public class MoodSettings {
             };
             mood1.setOnAction(event);
             mood2.setOnAction(event);
+
+
         }
 
 
@@ -83,6 +87,7 @@ public class MoodSettings {
                 bfr.close();
 
             }
+
             if(NewTab.easyButtons.list.size() == 0)
                 ((Label)NewTab.easyButtons.layout.getChildren().get(0)).getGraphic()
                         .setStyle(currentMood+"-fx-background-color:" +  EasyButtonMessage.color());

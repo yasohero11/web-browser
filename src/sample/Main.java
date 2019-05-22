@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 
 
 
-
 public class Main extends Application {
     public static Scene scene;
     @Override
