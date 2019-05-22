@@ -1,10 +1,6 @@
 package sample;
 
 import com.jfoenix.controls.JFXButton;
-import javafx.geometry.Pos;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-
 public class BookMarkNode {
     private String name;
     private String url;

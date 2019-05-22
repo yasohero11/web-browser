@@ -1,6 +1,5 @@
  package sample;
 
-import com.jfoenix.controls.JFXButton;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;

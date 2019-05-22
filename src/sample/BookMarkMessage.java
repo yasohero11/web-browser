@@ -3,8 +3,6 @@ package sample;
 
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import javafx.scene.input.KeyCode;
-
 public class BookMarkMessage extends AddMessage{
     private Button save;
     private Button close;

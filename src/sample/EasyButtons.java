@@ -1,23 +1,12 @@
 package sample;
 
 import com.jfoenix.controls.JFXButton;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
-
-import java.io.*;
 import java.util.LinkedList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class EasyButtons {
 
     public LinkedList<BookMarkNode> list;

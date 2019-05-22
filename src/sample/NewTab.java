@@ -1,20 +1,15 @@
 package sample;
 
 import com.jfoenix.controls.JFXTabPane;
-import com.sun.glass.ui.Size;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.StackPane;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import javafx.scene.control.Tab;
+
+import javafx.scene.image.ImageView;
 
 public class NewTab implements EventHandler<Event> {
     public static JFXTabPane pane;

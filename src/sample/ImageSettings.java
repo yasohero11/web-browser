@@ -2,13 +2,10 @@ package sample;
 
 import com.jfoenix.controls.JFXRadioButton;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
