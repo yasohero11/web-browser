@@ -14,7 +14,7 @@ import javafx.scene.layout.StackPane;
 
 public class EditMessage  extends PopUpMessage{
 
-    GridPane pane;
+    private GridPane pane;
     protected TextField name;
     private Label lb;
     private Button delete;

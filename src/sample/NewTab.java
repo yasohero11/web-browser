@@ -10,6 +10,7 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 import java.util.ArrayList;
@@ -51,10 +52,10 @@ public class NewTab implements EventHandler<Event> {
              TabClass tabClass = new TabClass(tab);
              tabList.add(tabClass);
              if(settings.imageSettings.ImageSelected()){
-                 tabList.get(tabList.size()-1).setBackhgroundImage(settings.imageSettings.getSelectedImage());
+                 tabList.get(tabList.size()-1).setBackgroundImage(settings.imageSettings.getSelectedImage());
              }
              else
-             tabList.get(tabList.size()-1).setBackhgroundColor("-fx-background-color:" +settings.backgroundColor.getBackground());
+             tabList.get(tabList.size()-1).setBackgroundColor("-fx-background-color:" +settings.backgroundColor.getBackground());
 
              tab.setContent(tabClass.getLayout());
              pane.getTabs().add(pane.getTabs().size()- 1  ,  tab);
@@ -70,6 +71,13 @@ public class NewTab implements EventHandler<Event> {
                 return tabList.get(i);
         }
             return tabList.get(0);
+    }
+    public static ImageView setImage(String url , int width , int  height){
+        //Image image = new Image(url ,width,height,true ,true);
+        ImageView img  = new ImageView(url);
+        img.setFitWidth(width);
+        img.setFitHeight(height);
+        return img;
     }
 
 

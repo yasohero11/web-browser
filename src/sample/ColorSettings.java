@@ -62,7 +62,7 @@ public class ColorSettings extends  BackgroundRW{
 
                     for(int i = 0 ;  i < NewTab.tabList.size(); i++) {
                         // NewTab.tabList.get(i).setBackhgroundColor("-fx-background-color:" + format(colorPicker.getValue().toString()));
-                        NewTab.tabList.get(i).setBackhgroundColor("-fx-background-color:" + format(colorPicker.getValue().toString()));
+                        NewTab.tabList.get(i).setBackgroundColor("-fx-background-color:" + format(colorPicker.getValue().toString()));
                     }
                     setBackground(format(colorPicker.getValue().toString()));
                     pane.setStyle("-fx-background-color:" + getBackground());

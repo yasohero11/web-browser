@@ -26,20 +26,22 @@ public class Settings {
     public ColorSettings backgroundColor;
     public ColorSettings HistoryColor;
     public ImageSettings imageSettings;
+    public MoodSettings moodSettings;
     private  BorderPane layout;
     private ListView listView;
    Settings(){
        backgroundColor = new ColorSettings(NewTab.pane , "background.txt");
        HistoryColor = new ColorSettings(NewTab.history.pane2 , "historycolor.txt");
        imageSettings = new ImageSettings();
+       moodSettings = new MoodSettings();
        layout = new BorderPane();
        listView = new ListView();
        listView.setPrefSize(155 , 430);
-       frame = new Scene(layout , 425 , 430);
+       frame = new Scene(layout , 440 , 430);
        window = new Stage();
        window.initModality(Modality.APPLICATION_MODAL);
        window.setResizable(false);
-       listView.getItems().addAll("Background Color" ,"Background History Color", "Background Image");
+       listView.getItems().addAll("Background Color" ,"Background History Color", "Background Image" , "Mood Settings");
        layout.setLeft(listView);
        listView.getSelectionModel().selectedItemProperty().addListener(e->{
            if(listView.getSelectionModel().isSelected(0))
@@ -47,8 +49,11 @@ public class Settings {
            else if(listView.getSelectionModel().isSelected(1)){
                layout.setCenter(HistoryColor.getColorLayout());
            }
-           else
+           else if(listView.getSelectionModel().isSelected(2)) {
                layout.setCenter(imageSettings.getLayout());
+           }
+           else
+               layout.setCenter(moodSettings.getLayout());
            /*
            else {
                layout.setCenter(new StackPane());

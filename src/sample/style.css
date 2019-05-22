@@ -13,6 +13,16 @@
 -fx-background-radius : 30;
 
 }
+.jfx-button:hover{
+ -fx-background-color : #797D7F;
+}
+
+
+#history{
+ -fx-background-color: transparent;
+ -fx-font-size: 25;
+ -fx-text-fill: #A9CCE3;
+}
 
 #close{
  -fx-font-size: 12;
@@ -31,11 +41,6 @@
 .text-field{
  -fx-background-radius :22;
 
-}
-#history{
- -fx-background-color: transparent;
- -fx-font-size: 25;
- -fx-text-fill: #A9CCE3;
 }
 #homeButton{
 -fx-background-color: transparent;
@@ -71,6 +76,9 @@
 -fx-pref-width : 40;
 -fx-pref-height: 40;
 }
+#newTab:hover{
+ -fx-background-color : #DC7633;
+}
 
 /*
 .jfx-tab-pane{
@@ -80,10 +88,7 @@
 .jfx-tab-pane .tab-header-area .jfx-rippler {
     -jfx-rippler-fill: #4A235A;
 }
-.tab-debt {
-  -fx-background-image: url("images/image.jpg");
-  -fx-background-size: cover ;
-}
+
 
 /*
 .jfx-tab-pane .headers-region {

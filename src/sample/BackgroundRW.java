@@ -9,8 +9,8 @@ import java.util.logging.Logger;
 public abstract class BackgroundRW {
 
 
-    String background;
-    String fileName;
+    private String background;
+    private String fileName;
     BackgroundRW(String fileName){
        this.fileName =  fileName;
     }
@@ -20,7 +20,7 @@ public abstract class BackgroundRW {
         return "#" + color.substring(2 , color.length()-2);
     }
     public  boolean isColor(){
-        return background.startsWith("0x") || background.startsWith("#");
+        return  background.startsWith("#");
     }
     protected void read() {
 

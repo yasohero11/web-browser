@@ -8,12 +8,14 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class Main extends Application {
 
+
+public class Main extends Application {
+    public static Scene scene;
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Scene scene = new Scene(root, 1350, 600);
+         scene = new Scene(root, 1350, 600);
 
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
@@ -31,6 +33,7 @@ public class Main extends Application {
               NewTab.settings.imageSettings.write();
 
             NewTab.settings.HistoryColor.write();
+            NewTab.settings.moodSettings.write();
             primaryStage.close();
         });
         primaryStage.getIcons().add(new Image("images/brower.png"));

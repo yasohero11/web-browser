@@ -84,7 +84,7 @@ public class ImageSettings extends BackgroundRW {
     }
      private void applyChanges(Image image){
          for(int i = 0 ; i  < NewTab.tabList.size(); i++){
-             NewTab.tabList.get(i).setBackhgroundImage(image);
+             NewTab.tabList.get(i).setBackgroundImage(image);
          }
      }
     class ImageSettingsItem{

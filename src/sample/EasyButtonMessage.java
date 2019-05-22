@@ -1,11 +1,10 @@
  package sample;
 
 import com.jfoenix.controls.JFXButton;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
 import java.io.*;
@@ -16,10 +15,12 @@ import java.util.logging.Logger;
 
  public class EasyButtonMessage extends BookMarkMessage {
      private LinkedList<BookMarkNode> list;
-     FlowPane layout;
+     private FlowPane layout;
+
      private static Random random = new Random();
-     ChoiceBox box;
-     EasyButtonMessage(LinkedList<BookMarkNode> list , FlowPane layout , ChoiceBox box ){
+     private ChoiceBox box;
+
+     EasyButtonMessage(LinkedList<BookMarkNode> list , FlowPane layout , ChoiceBox box){
          setIcon(new Image("images/add.png"));
          this.layout = layout;
          this.list= list;
@@ -28,30 +29,33 @@ import java.util.logging.Logger;
      }
     @Override
     public void continueOperation() {
+
         BookMarkNode node = new BookMarkNode(text2.getText(), text1.getText(), 65);
         node.getButton().setText(text1.getText().substring(0,1).toUpperCase());
         node.getButton().setFont(Font.font(20));
-        node.getButton().setStyle("-fx-background-color:" +  color());
+        String  color =  color();
+        node.getButton().setStyle(MoodSettings.currentMood+";-fx-background-color:" +  color);
+
+        ((Label)layout.getChildren().get(layout.getChildren().size()-1)).getGraphic().setStyle(MoodSettings.currentMood+
+                "-fx-background-color:" +  color());
         node.getButton().setTooltip(new Tooltip(text1.getText()));
+        Label l = new Label(node.getName() , node.getButton());
+        l.setContentDisplay(ContentDisplay.TOP);
+        l.setFont(Font.font(22));
+        l.setTextFill(Color.web(color));
         box.getItems().add(node.getName());
         box.getSelectionModel().select(0);
-        if (list.size() < 5) {
-            list.add(node);
-            layout.getChildren().get(layout.getChildren().size()-1).setStyle("-fx-background-color:" +  color());
-            text1.setText("");
-            text2.setText("");
-            layout.getChildren().add(layout.getChildren().size() - 1, list.get(list.size() - 1).getButton());
-        }
+        list.add(node);
+        text1.setText("");
+        text2.setText("");
+        if (list.size() < 6)
+            layout.getChildren().add(layout.getChildren().size() - 1, l);
         else
         {
-            list.add(node);
-            text1.setText("");
-            text2.setText("");
             layout.getChildren().remove(layout.getChildren().size()-1);
-            layout.getChildren().add(layout.getChildren().size() , list.get(list.size() - 1).getButton());
-            close();
-
+            layout.getChildren().add(layout.getChildren().size() , l);
         }
+
     }
 
     public static String color(){
