@@ -1,16 +1,19 @@
 # web-browser
  ## Home page
- ![easyButton](https://user-images.githubusercontent.com/34658228/57181134-41374d00-6e90-11e9-9206-18793f1139df.PNG)
+![homepage](https://user-images.githubusercontent.com/34658228/58327042-d940aa80-7e2e-11e9-8426-48cda62cc7b3.PNG)
  
  ## Adding a bookmark
- ![addBookMark](https://user-images.githubusercontent.com/34658228/57181157-89ef0600-6e90-11e9-80c6-d470b65c4e85.PNG)
+ ![bookmark](https://user-images.githubusercontent.com/34658228/58327233-5b30d380-7e2f-11e9-94e1-f5f7872ecf46.PNG)
+ 
+ ![bookmark2](https://user-images.githubusercontent.com/34658228/58327234-5b30d380-7e2f-11e9-86da-eda454418808.PNG)
+ 
+ ![bookmark3](https://user-images.githubusercontent.com/34658228/58327232-5b30d380-7e2f-11e9-8990-dff0c2ab87d8.PNG)
 
- ![add](https://user-images.githubusercontent.com/34658228/57181170-a1c68a00-6e90-11e9-8965-a00e834a2cab.PNG)
  
  ## Shortcut buttons
- ![easyButton](https://user-images.githubusercontent.com/34658228/57181187-c4f13980-6e90-11e9-85d5-7fea542517ec.PNG)
- 
- ![timeSite](https://user-images.githubusercontent.com/34658228/57181194-e8b47f80-6e90-11e9-85ec-0c481bef1a1e.PNG)
- 
-![tabs](https://user-images.githubusercontent.com/34658228/57181202-fe29a980-6e90-11e9-986e-80774d307b47.PNG)
-![History](https://user-images.githubusercontent.com/34658228/57181218-1ef1ff00-6e91-11e9-86e6-0115341ad903.PNG)
+![easybutton](https://user-images.githubusercontent.com/34658228/58327561-36892b80-7e30-11e9-8cf6-1bca1c8c86f6.PNG)
+![easybutton2](https://user-images.githubusercontent.com/34658228/58327458-f629ad80-7e2f-11e9-922a-5694a0b0b8bf.PNG)
+![update](https://user-images.githubusercontent.com/34658228/58327460-f629ad80-7e2f-11e9-9f0e-526b51c92976.PNG)
+![update2](https://user-images.githubusercontent.com/34658228/58327461-f6c24400-7e2f-11e9-9f1f-0f7c7e17ffcb.PNG)
+
+## History
