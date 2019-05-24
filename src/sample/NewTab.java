@@ -11,6 +11,8 @@ import javafx.scene.control.Tab;
 
 import javafx.scene.image.ImageView;
 
+import java.io.File;
+
 public class NewTab implements EventHandler<Event> {
     public static JFXTabPane pane;
     public static History history = new History();
@@ -31,6 +33,14 @@ public class NewTab implements EventHandler<Event> {
         TabClass tabClass = new TabClass(mainTab);
         tabList.add(tabClass);
         settings = new Settings();
+        if(!new File("EasyButtons.txt").exists()) {
+            easyButtons.easyButtonMessage.text2.setText("bing");
+            easyButtons.easyButtonMessage.text1.setText("bing");
+            easyButtons.easyButtonMessage.continueOperation();
+        }
+        if(!new File("BookMark.txt").exists())
+        bookMarks.add("bing" , "bing");
+
         mainTab.setContent(tabClass.getLayout());
         newTab.setOnSelectionChanged(this);
         bookMarks.read();

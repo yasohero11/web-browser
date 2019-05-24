@@ -42,6 +42,7 @@ public class Settings {
        window.initModality(Modality.APPLICATION_MODAL);
        window.setResizable(false);
        listView.getItems().addAll("Background Color" ,"Background History Color", "Background Image" , "Mood Settings");
+
        layout.setLeft(listView);
        listView.getSelectionModel().selectedItemProperty().addListener(e->{
            if(listView.getSelectionModel().isSelected(0))

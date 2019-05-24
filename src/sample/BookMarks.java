@@ -85,6 +85,9 @@ public class BookMarks{
 
 
     public void delete (){
+        if(list.size() ==12){
+            add.setDisable(false);
+        }
         for(int i = 0; i < list.size(); i++){
             if(list.get(i).getName().equals(box.getValue())){
                 list.remove(i);
@@ -94,6 +97,7 @@ public class BookMarks{
                 box.getSelectionModel().select(0);
             }
         }
+
     }
 
 

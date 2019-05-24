@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
@@ -9,8 +10,11 @@ import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebEvent;
 import javafx.scene.web.WebView;
 import com.jfoenix.controls.*;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 public class TabClass {
     private String URL;
     private JFXTextField text1;
@@ -23,18 +27,17 @@ public class TabClass {
     private JFXButton backButton;
     private JFXButton forwardButton;
     private JFXButton restartButton;
-    private WebView web;
+    private WebView web ;
     private JFXButton historyButton;
     private JFXButton homeButton;
     private JFXButton settingsButton;
-    public TabHistory tabHistory;
     private  FlowPane easyButtonsLayout =  new FlowPane();
     private Tab tab;
     private JFXButton edit;
     public StackPane background;
     public boolean colored;
-
-
+    private WebEngine engine ;
+    private TabHistory tabHistory ;
 
 
    private TabClass(){
@@ -42,13 +45,14 @@ public class TabClass {
        background = new StackPane();
        background.setPrefSize(1360, 466);
            text1 = new JFXTextField();
+           tabHistory = new TabHistory();
            text2 = new TextField();
            toolBar = new ToolBar();
            layout = new BorderPane();
            historyButton = new JFXButton("H");
            historyButton.setId("history");
            text1.setMinHeight(30);
-           text1.setAlignment(Pos.CENTER);
+          // text1.setAlignment(Pos.CENTER);
            text1.setMinWidth(1050);
            text1.setPromptText("Search...");
            text2.setMinHeight(30);
@@ -86,37 +90,37 @@ public class TabClass {
 
         edit.setPrefSize(200 , 40);
         centerLayout.getChildren().addAll(background,title , text2 , logo , edit , settingsButton);
-        text1.setAlignment(Pos.CENTER);
         text1.setUnFocusColor(Paint.valueOf("#44DA26"));
         text1.setFocusColor(Paint.valueOf("#F2F07D"));
 
         layout.setCenter(centerLayout);
-        tabHistory = new TabHistory(text1);
+
         searchButton.setOnMouseClicked(e->{
             if(text1.getText().length() != 0) {
-                tabHistory.addUrl(text1.getText());
-
                 browse();
-                check();
+
+
             }
         });
         backButton.setOnMouseClicked(e-> {
-            if(!tabHistory.atFirst()) {
-                tabHistory.back();
-                browse();
+
+                engine.executeScript("history.back()");
+                text1.setText(engine.getLocation());
+            tabHistory.back();
                 check();
-            }
+
         });
 
         forwardButton.setOnMouseClicked(e->{
-            if(!tabHistory.atLast()) {
-                tabHistory.forward();
-                browse();
-                check();
-            }
+
+            engine.executeScript("history.forward()");
+            tabHistory.forward();
+            check();
+
+
         });
         restartButton.setOnMouseClicked(e->{
-            browse();
+            engine.reload();
         });
 
         historyButton.setOnAction(e->NewTab.history.show());
@@ -140,17 +144,16 @@ public class TabClass {
         text1.setOnAction(e -> {
             if(text1.getText().length() != 0) {
                 text2.setText(text1.getText());
-                tabHistory.addUrl(text1.getText());
                 browse();
-                check();
+
+
             }
         });
         text2.setOnAction(e -> {
             if(text2.getText().length() != 0) {
                 text1.setText(text2.getText());
-                tabHistory.addUrl(text1.getText());
                 browse();
-                check();
+
             }
         });
         homeButton.setOnMouseClicked(e->
@@ -158,20 +161,51 @@ public class TabClass {
                 layout.setCenter(centerLayout);
                 text1.setText("");
                 text2.setText("");
+                setEngine();
                 tabHistory.reset();
-                restartButton.setDisable(true);
                 check();
             if(!tab.getText().equals("main tab")) {
                 tab.setText("new tab");
             }
         });
+
+
+        setEngine();
+
+    }
+
+    private void setEngine(){
+        web = new WebView();
+        engine = web.getEngine();
+        engine.setOnStatusChanged(new EventHandler<WebEvent<String>>() {
+            @Override
+            public void handle(WebEvent<String> event) {
+                if(!NewTab.history.getLastHistoryNode().getUrl().equals(engine.getLocation())) {
+                   // pages.increment();
+                    if(!tabHistory.contains(engine.getLocation())) {
+                        System.out.println(!tabHistory.contains(engine.getLocation()));
+                        tabHistory.addUrl(engine.getLocation());
+                        System.out.println(tabHistory.getCurrentPage());
+                        check();
+                    }
+                    NewTab.history.add(engine.getLocation());
+                    text1.setText(engine.getLocation());
+                    setTabTiltle();
+                }
+            }
+        });
+
     }
     public boolean isSelected(){
         return tab.isSelected();
     }
+
     public void check(){
+        System.out.println(tabHistory.getNum());
          if(!tabHistory.isEmpty())
              restartButton.setDisable(false);
+         else
+             restartButton.setDisable(true);
 
         if(!tabHistory.atFirst() && !tabHistory.isEmpty()) {
             backButton.setDisable(false);
@@ -206,14 +240,11 @@ public class TabClass {
     }
 
     public void browse(){
-        web = new WebView();
-        WebEngine engine = web.getEngine();
         checkUrl();
         setTabTiltle();
         engine.load(text1.getText());
-
-        System.out.println(engine.getLocation());
-       // System.out.println(engine.getHistory().getEntries().get(engine.getHistory().getEntries().size()));
+        tabHistory.addUrl(text1.getText());
+        check();
         NewTab.history.add(engine.getLocation());
         layout.setCenter(web);
     }
@@ -238,14 +269,18 @@ public class TabClass {
            if(!text1.getText().startsWith("https://"))
            text1.setText("https://www." + text1.getText());
        }
-       if(!text1.getText().endsWith(".com"))
-           text1.setText( text1.getText()+".com");
+       if(!text1.getText().endsWith(".com/"))
+           if(text1.getText().endsWith(".com")){
+               text1.setText( text1.getText()+"/");
+           }
+           else
+              text1.setText( text1.getText()+".com/");
    }
 
    public void setTabTiltle(){
        if(!tab.getText().equals("main tab")) {
            String text = text1.getText();
-           tab.setText(text.substring(text.indexOf(".") + 1, text.lastIndexOf(".")));
+           tab.setText(text.substring(text.indexOf(".") + 1, text.indexOf("." ,text.indexOf(".")+1)));
        }
    }
 

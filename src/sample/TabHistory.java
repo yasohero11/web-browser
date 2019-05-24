@@ -4,9 +4,8 @@ import javafx.scene.control.TextField;
 
 public class TabHistory extends  History {
     private int currentPage;
-    TextField text;
-    TabHistory(TextField text){
-        this.text = text;
+
+    TabHistory(){
         currentPage = 0;
     }
     public void addUrl(String url){  // add a page
@@ -32,12 +31,12 @@ public class TabHistory extends  History {
 
     public void back(){  //go back to the  previous page if it is not the first page
             currentPage--;
-            text.setText(getCurrentPage());
+           // text.setText(getCurrentPage());
 
     }
     public void forward(){  //go forward to the next page if it is not the the last page
             currentPage++;
-            text.setText(getCurrentPage());
+            //text.setText(getCurrentPage());
     }
 
     public String getCurrentPage() {

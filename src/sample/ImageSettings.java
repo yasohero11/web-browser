@@ -16,7 +16,7 @@ public class ImageSettings extends BackgroundRW {
     private VBox layout;
     private ToggleGroup group;
     private ScrollPane scrollPane;
-    LinkedList<ImageSettingsItem> list;
+    private LinkedList<ImageSettingsItem> list;
     ImageSettings(){
         super("background.txt");
         layout = new VBox();
@@ -48,7 +48,7 @@ public class ImageSettings extends BackgroundRW {
             }
         }
         layout.setStyle("-fx-background-color: #B3B6B7");
-        layout.setPrefSize(265 , 430);
+        layout.setPrefSize(280 , 430);
 
     }
 
@@ -85,7 +85,7 @@ public class ImageSettings extends BackgroundRW {
          }
      }
     class ImageSettingsItem{
-       private HBox pane = new HBox();
+       private HBox pane ;
        public JFXRadioButton radioButton;
        public Image img;
        public String imageUrl;

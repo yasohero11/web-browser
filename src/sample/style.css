@@ -95,7 +95,10 @@
     -fx-background-color: -fx-accent;
 }
 */
-
+.list-cell{
+    -fx-background-color: red; /* 2 */
+    -fx-text-fill: white; /* 5 */
+}
 
 
 

@@ -19,14 +19,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class History {
-    LinkedList<HistoryNode> list = new LinkedList<>();
+    private LinkedList<HistoryNode> list = new LinkedList<>();
 
-    VBox layout;
-    Stage window;
-    Scene frame;
-    int count = 0;
-    BorderPane borderPane;
-    HistoryPane pane2;
+    private VBox layout;
+    private Stage window;
+    private Scene frame;
+    private int count = 0;
+    private BorderPane borderPane;
+    public HistoryPane pane2;
 
     History() {
         borderPane = new BorderPane();
@@ -99,6 +99,9 @@ public class History {
 */
     public void setLayout(HistoryNode historyNode) {
         Text text1 = new Text(historyNode.getUrl());
+        if(historyNode.getUrl().length() > 28) {
+           text1.setText(historyNode.getUrl().substring(0 , 28) + "...");
+        }
         Text text2 = new Text(historyNode.getDate() +" -- " + historyNode.getTime());
         setFont(text1);
         setFont(text2);
@@ -107,6 +110,9 @@ public class History {
         pane2.add(text1, text2, historyNode.closeButton);
 
 
+    }
+    public HistoryNode getLastHistoryNode(){
+        return list.getLast();
     }
 
     public void read() {
@@ -160,11 +166,18 @@ public class History {
             Logger.getLogger(BookMarks.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    public boolean contains(String url){
+        for(int i = 0 ;  i < list.size(); i++)
+            if(list.get(i).getUrl().equals(url))
+                return true;
+
+                return false;
+    }
 
     // inner class
     public class HistoryNode {
 
-        int numberOfTheObject;
+        private int numberOfTheObject;
         private String date;
         private String time;
         private String url;

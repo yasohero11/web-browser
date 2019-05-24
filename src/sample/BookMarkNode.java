@@ -4,33 +4,26 @@ import com.jfoenix.controls.JFXButton;
 public class BookMarkNode {
     private String name;
     private String url;
-    private JFXButton bt ;
-
-
-
-    BookMarkNode() {
-        bt =new JFXButton ("any");
-        bt.setPrefSize(100, 20);
-
-    }
-
+    private JFXButton button ;
 
     public BookMarkNode(String url, String name) {
-        this();
         this.url = url;
         this.name = name;
-        bt.setText(name);
-        bt.setOnAction(e->{
+        button =new JFXButton (name);
+        button.setPrefSize(100, 20);
+        button.setText(name);
+        button.setOnAction(e->{
         NewTab.getSelectedTab().setURL(url);
-        NewTab.getSelectedTab().tabHistory.addUrl(NewTab.getSelectedTab().getURL());
+       // NewTab.getSelectedTab().tabHistory.addUrl(url);
         NewTab.getSelectedTab().browse();
-        NewTab.getSelectedTab().check();
+       // NewTab.getSelectedTab().check();
         });
 
     }
+
     public BookMarkNode(String url , String name , int size){
            this(url , name);
-           bt.setPrefSize(size,size);
+           button.setPrefSize(size,size);
     }
 
     public String getUrl() {
@@ -43,14 +36,14 @@ public class BookMarkNode {
 
     public void setName(String name) {
         this.name = name;
-        bt.setText(name);
+        button.setText(name);
     }
 
     public void setUrl(String url) {
         this.url = url;
     }
     public JFXButton getButton (){
-        return bt;
+        return button;
     }
 
 

@@ -2,11 +2,13 @@ package sample;
 
 import javafx.geometry.Insets;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 
 public class HistoryPane extends Pane {
    private ScrollPane mainPane;
@@ -56,7 +58,7 @@ public class HistoryPane extends Pane {
         dateLayout.setPadding(new Insets(0,0,0,size));
 
     }
-    public void add(Node link , Node date , Node button){
+    public void add(Text link , Text date , Button button){
         linkLayout.getChildren().add(0,link);
         dateLayout.getChildren().add(0,date);
         rightLayout.getChildren().add(0,button);

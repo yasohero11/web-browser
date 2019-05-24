@@ -16,7 +16,7 @@ public class ColorSettings extends  BackgroundRW{
     private Circle circle;
     private ColorPicker colorPicker;
     private FlowPane layout;
-    Node pane;
+    private Node pane;
     ColorSettings(Node pane  , String fileName){
         super(fileName);
         layout = new FlowPane();
@@ -32,7 +32,6 @@ public class ColorSettings extends  BackgroundRW{
         }
         else
             reset();
-
 
         if(pane instanceof TabPane) {
             if (isColor())
