@@ -21,15 +21,13 @@ import java.util.logging.Logger;
 public class History {
     private LinkedList<HistoryNode> list = new LinkedList<>();
 
-    private VBox layout;
     private Stage window;
     private Scene frame;
     private int count = 0;
-    private BorderPane borderPane;
+
     public HistoryPane pane2;
 
     History() {
-        borderPane = new BorderPane();
         window = new Stage();
         window.setTitle("History");
         window.initModality(Modality.APPLICATION_MODAL);

@@ -1,0 +1,3 @@
+bing$bing
+facebook$facebook
+https://www.google.com/$google
