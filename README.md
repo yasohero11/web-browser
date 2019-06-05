@@ -17,7 +17,7 @@
 ![update2](https://user-images.githubusercontent.com/34658228/58327461-f6c24400-7e2f-11e9-9f1f-0f7c7e17ffcb.PNG)
 
 ## History
-![History](https://user-images.githubusercontent.com/34658228/58327709-8d8f0080-7e30-11e9-9583-461fc5c1df9e.PNG)
+![History](https://user-images.githubusercontent.com/34658228/58984514-8e814400-87d9-11e9-93f2-6b5769b9e07d.PNG)
 
 ##Settings
 ![b1](https://user-images.githubusercontent.com/34658228/58327873-068e5800-7e31-11e9-8b4e-5df923215a96.PNG)
