@@ -1,6 +1,0 @@
-bing$bing
-facebook$facebook
-https://www.google.com/$google
-https://m.facebook.com/?refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr$facebook
-https://www.bing.com/images/search?q=facebook&FORM=HDRSC2$images
-https://www.facebook.com/momoitaly$momos facboook
