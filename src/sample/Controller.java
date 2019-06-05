@@ -17,20 +17,7 @@ public class Controller implements Initializable {
     Tab newTab;
     @FXML
     JFXTabPane tabPane;
-    @FXML
-    Tab other;
 
-
-
-
-      @FXML
-      public void onClose(){
-
-      }
-      @FXML
-      public void  onMin(){
-
-      }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
             NewTab tab  = new NewTab(tabPane , mainTab , newTab);

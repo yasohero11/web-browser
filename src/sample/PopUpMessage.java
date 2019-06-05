@@ -11,7 +11,6 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import javax.swing.text.html.ImageView;
 
 public abstract class PopUpMessage {
     private BorderPane layout ;

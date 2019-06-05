@@ -1,7 +1,7 @@
 package sample;
 
 import javafx.event.EventHandler;
-import javafx.geometry.Pos;
+
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -13,7 +13,6 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebEvent;
 import javafx.scene.web.WebView;
 import com.jfoenix.controls.*;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class TabClass {
     private String URL;
@@ -176,21 +175,22 @@ public class TabClass {
 
     private void setEngine(){
         web = new WebView();
+        engine = new WebEngine();
         engine = web.getEngine();
         engine.setOnStatusChanged(new EventHandler<WebEvent<String>>() {
             @Override
             public void handle(WebEvent<String> event) {
-                if(!NewTab.history.getLastHistoryNode().getUrl().equals(engine.getLocation())) {
-                   // pages.increment();
-                    if(!tabHistory.contains(engine.getLocation())) {
-                        System.out.println(!tabHistory.contains(engine.getLocation()));
-                        tabHistory.addUrl(engine.getLocation());
-                        System.out.println(tabHistory.getCurrentPage());
-                        check();
+                if (!NewTab.history.isEmpty()) {
+                    History.HistoryNode historyNode = NewTab.history.getLastHistoryNode();
+                    if (!historyNode.getUrl().equals(engine.getLocation())) {
+                        if (!tabHistory.contains(engine.getLocation())) {
+                            tabHistory.addUrl(engine.getLocation());
+                            check();
+                        }
+                        NewTab.history.add(engine.getLocation());
+                        text1.setText(engine.getLocation());
+                        setTabTiltle();
                     }
-                    NewTab.history.add(engine.getLocation());
-                    text1.setText(engine.getLocation());
-                    setTabTiltle();
                 }
             }
         });
@@ -201,7 +201,6 @@ public class TabClass {
     }
 
     public void check(){
-        System.out.println(tabHistory.getNum());
          if(!tabHistory.isEmpty())
              restartButton.setDisable(false);
          else
@@ -265,13 +264,18 @@ public class TabClass {
     }
 
    private void checkUrl() {
-       if (!text1.getText().startsWith("https://www.") || !text1.getText().startsWith("http://www.")) {
-           if(!text1.getText().startsWith("https://"))
-           text1.setText("https://www." + text1.getText());
+       if (!text1.getText().startsWith("https://") && !text1.getText().startsWith("http://")) {
+           if(text1.getText().startsWith("www."))
+           text1.setText("https://" + text1.getText());
+           else
+               text1.setText("https://www." + text1.getText());
+
        }
-       if(!text1.getText().endsWith(".com/"))
-           if(text1.getText().endsWith(".com")){
+       if(!text1.getText().contains(".com/"))
+           if(text1.getText().contains(".com")){
+               if((text1.getText().indexOf(".com")+4) == text1.getLength())
                text1.setText( text1.getText()+"/");
+
            }
            else
               text1.setText( text1.getText()+".com/");

@@ -4,13 +4,12 @@ package sample;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,23 +26,32 @@ public class History {
 
     public HistoryPane pane2;
 
+
     History() {
         window = new Stage();
         window.setTitle("History");
         window.initModality(Modality.APPLICATION_MODAL);
         pane2 = new HistoryPane(800, 600, 50);
-        frame = new Scene(pane2, 800, 600);
+        frame = new Scene(pane2, 810, 682);
         window.setResizable(false);
-        window.getIcons().add(new Image("images/history.png"));
+        window.initStyle(StageStyle.TRANSPARENT);
         window.setScene(frame);
+        pane2.close.setOnAction(e->window.close());
+        pane2.setOnMouseDragged(e->{
+            window.setX(e.getScreenX()-450);
+            window.setY(e.getScreenY()-20);
+        });
     }
 
     public void add(String url) {
-        list.add(new HistoryNode(url));
-        setLayout(list.get(list.size() - 1));
+        if(url != null) {
+            list.add(new HistoryNode(url));
+            setLayout(list.get(list.size() - 1));
+        }
     }
 
     public void add(String url, int index) {
+        if(url != null)
         list.add(index, new HistoryNode(url));
     }
 
@@ -63,7 +71,9 @@ public class History {
     public LinkedList<HistoryNode> getHistory() {
         return list;
     }
-
+    public boolean isEmpty(){
+        return list.isEmpty();
+    }
     public void setHistory(History history) {
         this.list = history.getHistory();
     }
@@ -96,18 +106,18 @@ public class History {
     }
 */
     public void setLayout(HistoryNode historyNode) {
-        Text text1 = new Text(historyNode.getUrl());
-        if(historyNode.getUrl().length() > 28) {
-           text1.setText(historyNode.getUrl().substring(0 , 28) + "...");
+        if(historyNode.getUrl() != null) {
+            Text text1 = new Text(historyNode.getUrl());
+            if (historyNode.getUrl().length() > 28) {
+                text1.setText(historyNode.getUrl().substring(0, 28) + "...");
+            }
+            Text text2 = new Text(historyNode.getDate() + " -- " + historyNode.getTime());
+            setFont(text1);
+            setFont(text2);
+            pane2.setSpacing(20);
+            historyNode.closeButton.setAlignment(Pos.CENTER);
+            pane2.add(text1, text2, historyNode.closeButton);
         }
-        Text text2 = new Text(historyNode.getDate() +" -- " + historyNode.getTime());
-        setFont(text1);
-        setFont(text2);
-        pane2.setSpacing(20);
-        historyNode.closeButton.setAlignment(Pos.CENTER);
-        pane2.add(text1, text2, historyNode.closeButton);
-
-
     }
     public HistoryNode getLastHistoryNode(){
         return list.getLast();
@@ -165,9 +175,11 @@ public class History {
         }
     }
     public boolean contains(String url){
+
         for(int i = 0 ;  i < list.size(); i++)
             if(list.get(i).getUrl().equals(url))
                 return true;
+
 
                 return false;
     }

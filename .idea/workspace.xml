@@ -6,62 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fixing a bug">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/WebBrowser_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/BookMark.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/EasyButtons.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/History.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/WebBrowser - Shortcut.lnk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/WebBrowser.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/background.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/historycolor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/mood.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/bookmark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/brower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/cool.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/forward.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/history.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/m.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/m2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/m3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/maracco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/milky-way.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/mood1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/mood2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/moon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/moon1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/restart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/settings2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/settings3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/settings4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/images/water.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/BackgroundRW.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/ColorSettings$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/ColorSettings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/ImageSettings$ImageSettingsItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/ImageSettings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/MoodSettings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/Settings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projectUML/webBrowser.pdf" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Jar File">
+      <change afterPath="$PROJECT_DIR$/src/images/history1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/BookMarks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/BookMarks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/BookMark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/BookMark.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/History.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/History.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/WebBrowser - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/historycolor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/historycolor.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/History$HistoryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/History$HistoryNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/HistoryPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/HistoryPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/PopUpMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/PopUpMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JarFile/WebBrowser.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/JarFile/WebBrowser.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HistoryPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HistoryPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/PopUpMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/PopUpMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TabClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TabClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/TabHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TabHistory.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,10 +84,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/EasyButtonMessage.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="424">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,28 +96,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/BookMarks.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/EasyButtonMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2232">
-              <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+            <state relative-caret-position="664">
+              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/sample/TabHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/AddMessage.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/ColorSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="960">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/BookMarkEdit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,53 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/BackgroundRW.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="120">
               <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/History.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,8 +159,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/EasyButtons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="664">
               <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/EditMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/ImageSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1896">
+              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/AddMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -277,30 +252,30 @@
         <option value="$PROJECT_DIR$/src/sample/BackgroundRW.java" />
         <option value="$PROJECT_DIR$/src/sample/AddMessage.java" />
         <option value="$PROJECT_DIR$/src/sample/BookMarkMessage.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/EasyButtonEdit.java" />
         <option value="$PROJECT_DIR$/src/sample/EasyButtons.java" />
         <option value="$PROJECT_DIR$/src/sample/EditMessage.java" />
-        <option value="$PROJECT_DIR$/src/sample/PopUpMessage.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/MoodSettings.java" />
-        <option value="$PROJECT_DIR$/src/sample/style.css" />
         <option value="$PROJECT_DIR$/src/sample/Settings.java" />
-        <option value="$PROJECT_DIR$/src/sample/HistoryPane.java" />
         <option value="$PROJECT_DIR$/src/sample/ColorSettings.java" />
         <option value="$PROJECT_DIR$/src/sample/ImageSettings.java" />
         <option value="$PROJECT_DIR$/src/sample/BookMarkNode.java" />
         <option value="$PROJECT_DIR$/src/sample/Pages.java" />
         <option value="$PROJECT_DIR$/src/sample/EasyButtonMessage.java" />
         <option value="$PROJECT_DIR$/src/sample/NewTab.java" />
-        <option value="$PROJECT_DIR$/src/sample/TabHistory.java" />
-        <option value="$PROJECT_DIR$/src/sample/TabClass.java" />
         <option value="$PROJECT_DIR$/BookMark.txt" />
         <option value="$PROJECT_DIR$/src/sample/BookMarks.java" />
         <option value="$PROJECT_DIR$/src/projectUML.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/sample/PopUpMessage.java" />
+        <option value="$PROJECT_DIR$/src/sample/style.css" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/History.java" />
+        <option value="$PROJECT_DIR$/src/sample/HistoryPane.java" />
+        <option value="$PROJECT_DIR$/src/sample/TabClass.java" />
+        <option value="$PROJECT_DIR$/src/sample/TabHistory.java" />
       </list>
     </option>
   </component>
@@ -320,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,17 +318,11 @@
               <item name="web-browser" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="web-browser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="jfoenix-8.0.8" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,7 +334,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559067625924" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559697240336" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -376,6 +346,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tazos\IdeaProjects\web-browser\src\JarFile" />
       <recent name="C:\Users\tazos\IdeaProjects\web-browser\src\projectUML" />
       <recent name="C:\Users\tazos\IdeaProjects\web-browser\src\sample" />
       <recent name="C:\Users\tazos\IdeaProjects\web-browser\src\images" />
@@ -633,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558699447128</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Jar File">
+      <created>1559067704365</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1559067704365</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -641,9 +619,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1401919" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16577825" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -652,7 +629,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20151679" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20151679" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -695,21 +672,14 @@
     <MESSAGE value="update" />
     <MESSAGE value="Removing some unused imports" />
     <MESSAGE value="fixing a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing a bug" />
+    <MESSAGE value="Jar File" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jar File" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/Error404/Jdfv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/close.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/min.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -720,7 +690,6 @@
     <entry file="file://$PROJECT_DIR$/EasyButtons.txt" />
     <entry file="file://$PROJECT_DIR$/src/sample/style2.css" />
     <entry file="file://$PROJECT_DIR$/src/sample/style3.css" />
-    <entry file="file://$PROJECT_DIR$/mood.txt" />
     <entry file="file://$PROJECT_DIR$/src/images/cool.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -760,24 +729,102 @@
     <entry file="file://$PROJECT_DIR$/src/images/history.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$USER_HOME$/Desktop/Error404/Tabs.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/PopUpMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Pages.java" />
+    <entry file="file://$PROJECT_DIR$/src/projectUML.java" />
+    <entry file="file://$PROJECT_DIR$/BookMark.txt" />
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/historycolor.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mood.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/History.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BookMarkEdit.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="2184">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/PopUpMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/NewTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/MoodSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -794,57 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ImageSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/BookMarks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MoodSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Error404/Tabs.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EditMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Pages.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/ColorSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/NewTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1440">
+          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -857,7 +857,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BookMarkMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="120">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -865,67 +865,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projectUML.java" />
-    <entry file="file://$PROJECT_DIR$/BookMark.txt" />
     <entry file="file://$PROJECT_DIR$/src/sample/TabClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+        <state relative-caret-position="333">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6766#6767#0" expanded="true" />
+            <element signature="e#6805#6806#0" expanded="true" />
+            <element signature="e#8223#8224#0" expanded="true" />
+            <element signature="e#8264#8265#0" expanded="true" />
+            <element signature="e#8295#8296#0" expanded="true" />
+            <element signature="e#8324#8325#0" expanded="true" />
+            <element signature="e#8447#8448#0" expanded="true" />
+            <element signature="e#8481#8482#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/TabHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EasyButtonMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BookMarks.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/BookMarkEdit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="304">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -934,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BackgroundRW.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="120">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -942,27 +914,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/AddMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state relative-caret-position="96">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ColorSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="960">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EasyButtonMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -971,7 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/EasyButtons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
+        <state relative-caret-position="664">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -979,10 +964,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/History.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/EditMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+        <state relative-caret-position="528">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ImageSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1896">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.scene.control.TextField;
 
 public class TabHistory extends  History {
     private int currentPage;
@@ -9,17 +8,18 @@ public class TabHistory extends  History {
         currentPage = 0;
     }
     public void addUrl(String url){  // add a page
-        if(!atLast()){
-            History tempHistory = new History();
-            currentPage++;
-            add(url, currentPage-1);
-            tempHistory.deepCopy(getHistory(), currentPage);
-            setHistory(tempHistory);
-            currentPage = getSize();
-        }
-        else {
-            add(url);
-            currentPage++;
+        if(url != null) {
+            if (!atLast()) {
+                History tempHistory = new History();
+                currentPage++;
+                add(url, currentPage - 1);
+                tempHistory.deepCopy(getHistory(), currentPage);
+                setHistory(tempHistory);
+                currentPage = getSize();
+            } else {
+                add(url);
+                currentPage++;
+            }
         }
     }
     public void reset(){
@@ -32,7 +32,6 @@ public class TabHistory extends  History {
     public void back(){  //go back to the  previous page if it is not the first page
             currentPage--;
            // text.setText(getCurrentPage());
-
     }
     public void forward(){  //go forward to the next page if it is not the the last page
             currentPage++;
