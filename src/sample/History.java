@@ -43,9 +43,6 @@ public class History {
         });
     }
 
-    public void play(){
-        pane2.fr.play();
-    }
     public void add(String url) {
         if(url != null) {
             list.add(new HistoryNode(url));
@@ -159,6 +156,7 @@ public class History {
 
     public void show() {
         window.show();
+        pane2.fr.play();
     }
 
     private void setFont(Text text) {

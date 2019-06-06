@@ -124,10 +124,7 @@ public class TabClass {
             engine.reload();
         });
 
-        historyButton.setOnAction(e->{
-            NewTab.history.show();
-            NewTab.history.play();
-        });
+        historyButton.setOnAction(e->NewTab.history.show());
         edit.setOnAction(e->NewTab.easyButtons.edit.show());
         settingsButton.setOnAction(e->NewTab.settings.show());
 
