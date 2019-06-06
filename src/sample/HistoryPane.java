@@ -1,6 +1,7 @@
 package sample;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.animation.FadeTransition;
 import javafx.geometry.Insets;
 
 import javafx.scene.control.Button;
@@ -13,6 +14,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 
 public class HistoryPane extends Pane {
    private ScrollPane mainPane;
@@ -23,6 +25,7 @@ public class HistoryPane extends Pane {
    private VBox dateLayout;
    JFXButton close;
    FlowPane flowPane;
+    FadeTransition fr;
     HistoryPane(int width , int height , int rightSize){
         mainPane = new ScrollPane();
         mainPane.setPrefSize(width+10 , height+10);
@@ -67,6 +70,11 @@ public class HistoryPane extends Pane {
             rightLayout.getChildren().clear();
 
         });
+       fr = new FadeTransition(Duration.seconds(1),pane);
+        fr.setFromValue(1);
+        fr.setToValue(0);
+        fr.setFromValue(0);
+        fr.setToValue(1);
 
 
     }

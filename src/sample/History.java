@@ -43,6 +43,9 @@ public class History {
         });
     }
 
+    public void play(){
+        pane2.fr.play();
+    }
     public void add(String url) {
         if(url != null) {
             list.add(new HistoryNode(url));

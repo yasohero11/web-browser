@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.animation.FadeTransition;
 import javafx.event.EventHandler;
 
 import javafx.scene.control.*;
@@ -13,6 +14,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebEvent;
 import javafx.scene.web.WebView;
 import com.jfoenix.controls.*;
+import javafx.util.Duration;
 
 public class TabClass {
     private String URL;
@@ -122,10 +124,19 @@ public class TabClass {
             engine.reload();
         });
 
-        historyButton.setOnAction(e->NewTab.history.show());
+        historyButton.setOnAction(e->{
+            NewTab.history.show();
+            NewTab.history.play();
+        });
         edit.setOnAction(e->NewTab.easyButtons.edit.show());
         settingsButton.setOnAction(e->NewTab.settings.show());
 
+
+/*
+       settingsButton.setOnMouseMoved(e->{
+           settingsButton.setStyle("-fx-background-color:" + EasyButtonMessage.color());
+       });
+*/
     }
 
     TabClass(Tab tab) {

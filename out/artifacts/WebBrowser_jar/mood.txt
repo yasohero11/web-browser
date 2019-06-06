@@ -1,1 +1,1 @@
--fx-background-radius :12;
+-fx-background-radius :30;
