@@ -2,6 +2,7 @@ package sample;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.input.KeyCode;
 
 public class BookMarkEdit extends EditMessage {
 
@@ -15,14 +16,19 @@ public class BookMarkEdit extends EditMessage {
       delete = getDelete();
       save =getSave();
          setTittle("Bookmark update window");
-        save.setOnAction(e-> {
+        save.setOnAction(e-> edit());
+        name.setOnKeyPressed(e->{
+            if(e.getCode() == KeyCode.ENTER)
+                edit();
+        });
+        delete.setOnAction(e-> NewTab.bookMarks.delete());
+        clear.setOnAction(e->NewTab.bookMarks.clear());
+    }
+    private void edit(){
+        if(name.getLength() != 0) {
             NewTab.bookMarks.edit(name.getText());
             close();
             name.setText("");
-        });
-        delete.setOnAction(e->{
-            NewTab.bookMarks.delete();
-        });
-        clear.setOnAction(e->NewTab.bookMarks.clear());
+        }
     }
 }

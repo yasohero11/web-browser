@@ -33,6 +33,7 @@ public abstract class PopUpMessage {
         bottomLayout.setSpacing(20);
         layout = new BorderPane();
         layout.setBottom(bottomLayout);
+        layout.setStyle("-fx-background-color: #4B4955");
         contiue =  false;
         frame.setScene(new Scene(layout , 500, 300));
 
