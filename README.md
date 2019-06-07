@@ -11,7 +11,6 @@
  ## Shortcut buttons
 ![e1](https://user-images.githubusercontent.com/34658228/59138881-f5e0f480-898f-11e9-8873-39e4ffef7edc.PNG)
 ![easybutton2](https://user-images.githubusercontent.com/34658228/58327458-f629ad80-7e2f-11e9-922a-5694a0b0b8bf.PNG)
-![image](https://user-images.githubusercontent.com/34658228/59138876-f4afc780-898f-11e9-932f-43df97df1445.png)
 ![e3](https://user-images.githubusercontent.com/34658228/59138877-f4afc780-898f-11e9-84b8-33e4916a39cb.PNG)
 ![e4](https://user-images.githubusercontent.com/34658228/59138878-f5485e00-898f-11e9-943d-5969c7d39139.PNG)
 
