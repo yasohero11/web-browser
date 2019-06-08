@@ -17,7 +17,7 @@ public class EasyButtonEdit extends EditMessage {
         save = getSave();
         clear = getClear();
         delete = getDelete();
-          setTittle("Easy button update window");
+          setTitle("Easy button update window");
         save.setOnAction(e-> edit());
         delete.setOnAction(e->{
            NewTab.easyButtons.delete();

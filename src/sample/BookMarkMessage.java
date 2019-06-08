@@ -4,6 +4,7 @@ package sample;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
@@ -14,7 +15,9 @@ public class BookMarkMessage extends AddMessage{
     BookMarkMessage(){
     save = getSave();
     close = getExit();
-    setTittle("BookMarks");
+   setTitle("BookMarks");
+
+
         close.setOnAction(e->{
             close();
             text1.setText("");
@@ -48,7 +51,7 @@ public class BookMarkMessage extends AddMessage{
     }
 
     public void icon(Image img){
-        setIcon(img);
+        setIcon(new ImageView(img));
     }
 
     public void continueOperation(){

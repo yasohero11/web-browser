@@ -25,12 +25,14 @@ public class History {
     private int count = 0;
 
     public HistoryPane pane2;
+    private double x = 0 ;
+    private double y = 0;
 
 
     History() {
         window = new Stage();
         window.setTitle("History");
-        window.initModality(Modality.APPLICATION_MODAL);
+
         pane2 = new HistoryPane(800, 600, 50);
         frame = new Scene(pane2, 810, 682);
         window.setResizable(false);
@@ -38,8 +40,12 @@ public class History {
         window.setScene(frame);
         pane2.close.setOnAction(e->window.close());
         pane2.setOnMouseDragged(e->{
-            window.setX(e.getScreenX()-450);
-            window.setY(e.getScreenY()-20);
+            window.setX(e.getScreenX()-x);
+            window.setY(e.getScreenY()-y);
+        });
+        pane2.setOnMousePressed(e->{
+            x = e.getSceneX();
+            y = e.getSceneY();
         });
     }
 

@@ -22,7 +22,7 @@ public class EditMessage  extends PopUpMessage{
     private Button delete;
     private Button clear;
     public EditMessage(ChoiceBox box) {
-        setIcon(new Image("images/edit.png"));
+        setIcon(NewTab.setImage("images/edit.png" , 35 , 35));
         pane = new GridPane();
         pane.setHgap(20);
         delete = new Button("Delete");

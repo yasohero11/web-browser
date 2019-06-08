@@ -15,7 +15,7 @@ public class BookMarkEdit extends EditMessage {
       clear = getClear();
       delete = getDelete();
       save =getSave();
-         setTittle("Bookmark update window");
+         setTitle("Bookmark update window");
         save.setOnAction(e-> edit());
         name.setOnKeyPressed(e->{
             if(e.getCode() == KeyCode.ENTER)

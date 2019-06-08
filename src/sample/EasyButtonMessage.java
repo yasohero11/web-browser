@@ -20,11 +20,11 @@ import java.util.logging.Logger;
      private ChoiceBox box;
 
      EasyButtonMessage(LinkedList<BookMarkNode> list , FlowPane layout , ChoiceBox box){
-         setIcon(new Image("images/add.png"));
+         setIcon(NewTab.setImage("images/add.png" , 35 , 35));
          this.layout = layout;
          this.list= list;
          this.box = box;
-         setTittle("Easy Buttons");
+         setTitle("Easy Buttons");
      }
     @Override
     public void continueOperation() {

@@ -6,10 +6,12 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 
 
 public class AddMessage extends PopUpMessage {
@@ -30,6 +32,8 @@ public class AddMessage extends PopUpMessage {
         text2.setUnFocusColor(Color.WHITE);
         save = new Button("Save");
 
+
+
         pane.setAlignment(Pos.CENTER);
         url.setStyle("-fx-font-size : 17; -fx-text-fill : white;");
         name.setStyle("-fx-font-size : 17; -fx-text-fill : white;");
@@ -38,7 +42,7 @@ public class AddMessage extends PopUpMessage {
         text1.setFont(Font.font(16));
         text2.setFont(Font.font(16));
         pane.add(name , 0 , 0 );
-        pane.add(text1 , 1 , 0 , 1 , 1 );
+        pane.add(text1 , 1 , 0 , 2 , 1 );
         pane.add(url , 0 , 1 );
         pane.add(text2 , 1 , 1 ,2 , 1);
         pane.setVgap(20);
