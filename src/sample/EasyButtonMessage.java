@@ -1,7 +1,6 @@
  package sample;
 
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
