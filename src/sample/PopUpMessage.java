@@ -33,8 +33,8 @@ public abstract class PopUpMessage {
         title = new Text("title");
         title.setFont(Font.font(18));
         topLayout = new HBox(title);
-
         frame = new Stage();
+        frame.initModality(Modality.APPLICATION_MODAL);
         frame.setTitle("Pop Up Message");
         frame.initStyle(StageStyle.TRANSPARENT);
         frame.setResizable(false);

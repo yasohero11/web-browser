@@ -37,6 +37,7 @@ public class History {
         frame = new Scene(pane2, 810, 682);
         window.setResizable(false);
         window.initStyle(StageStyle.TRANSPARENT);
+        window.initModality(Modality.APPLICATION_MODAL);
         window.setScene(frame);
         pane2.close.setOnAction(e->window.close());
         pane2.setOnMouseDragged(e->{
