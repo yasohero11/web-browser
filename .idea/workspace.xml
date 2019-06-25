@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="update the look and feel of  pop up messages">
-      <change afterPath="$PROJECT_DIR$/src/sample/BouncingBall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/GoogleLoadingScreen.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="added some simple animation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/WebBrowser.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebBrowser_jar/WebBrowser.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/History$HistoryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/History$HistoryNode.class" afterDir="false" />
@@ -16,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/PopUpMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/PopUpMessage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebBrowser/sample/TabClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TabClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TabClass.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +70,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/TabClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
@@ -85,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/BouncingBall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="569">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -97,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/GoogleLoadingScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="449">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -259,6 +256,7 @@
         <option value="$PROJECT_DIR$/src/sample/GoogleLoadingScreen.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/TabClass.java" />
+        <option value="$PROJECT_DIR$/src/sample/BouncingBall.java" />
       </list>
     </option>
   </component>
@@ -643,14 +641,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559989248886</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added some simple animation">
+      <created>1561483117231</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1561483117232</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19829424" />
@@ -662,7 +667,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20151679" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20151679" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -709,7 +714,8 @@
     <MESSAGE value="change the History pane and fixing a bug" />
     <MESSAGE value="add fade animation in history pane" />
     <MESSAGE value="update the look and feel of  pop up messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the look and feel of  pop up messages" />
+    <MESSAGE value="added some simple animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some simple animation" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -947,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BouncingBall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/HistoryPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -1010,13 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/GoogleLoadingScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1034,6 +1026,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/GoogleLoadingScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/BouncingBall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
