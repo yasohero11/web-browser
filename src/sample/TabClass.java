@@ -59,7 +59,6 @@ public class TabClass {
            text2.setMinHeight(30);
            text2.setMinWidth(800);
            text2.setPromptText("Search...");
-
            searchButton = new JFXButton("", NewTab.setImage("images/search.png", 22, 22));
            backButton = new JFXButton("", NewTab.setImage("images/back.png", 22, 22));
            forwardButton = new JFXButton("", NewTab.setImage("images/forward.png", 22, 22));
@@ -88,9 +87,12 @@ public class TabClass {
            edit = new JFXButton("Edit Easy Button");
            edit.setLayoutX(570);
            edit.setLayoutY(375);
+           GoogleLoadingScreen googleLoadingScreen = new GoogleLoadingScreen(10.0);
+           googleLoadingScreen.setLayoutX(630);
+           googleLoadingScreen.setLayoutY(455);
 
         edit.setPrefSize(200 , 40);
-        centerLayout.getChildren().addAll(background,title , text2 , logo , edit , settingsButton);
+        centerLayout.getChildren().addAll(background,title , text2 , logo , edit , settingsButton,googleLoadingScreen);
         text1.setUnFocusColor(Paint.valueOf("#44DA26"));
         text1.setFocusColor(Paint.valueOf("#F2F07D"));
 
